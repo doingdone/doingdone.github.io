@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title>Hexo</title>
-      <link href="/2018/04/13/hexo/"/>
-      <url>/2018/04/13/hexo/</url>
-      <content type="html"><![CDATA[<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><blockquote><p>yarn global add hexo</p></blockquote><blockquote><p>mkdir blog &amp;&amp; cd blog</p></blockquote><blockquote><p>yarn init</p></blockquote><blockquote><p>hexo themes </p></blockquote><h2 id="github"><a href="#github" class="headerlink" title="github"></a>github</h2><blockquote><p>add repo</p></blockquote><blockquote><p>upload repo</p></blockquote><h2 id="other"><a href="#other" class="headerlink" title="other"></a>other</h2><blockquote><p>yarn add hexo-deployer-git</p></blockquote><blockquote><p>hexo clean</p></blockquote><blockquote><p>hexo generate</p></blockquote><blockquote><p>hexo deploy</p></blockquote><blockquote><p>访问 <a href="https://yourgithubname.github.io" target="_blank" rel="noopener">https://yourgithubname.github.io</a></p></blockquote><blockquote><p>注意 仓库名必须是zwddoit.github.io，如果用master分支的</p></blockquote>]]></content>
-      
+<search>
+  <entry>
+    <title><![CDATA[Hexo]]></title>
+    <url>%2F2018%2F04%2F13%2Fhexo%2F</url>
+    <content type="text"><![CDATA[hexo yarn global add hexo mkdir blog &amp;&amp; cd blog yarn init hexo themes github add repo upload repo other yarn add hexo-deployer-git hexo clean hexo generate hexo deploy 访问 https://yourgithubname.github.io 注意 仓库名必须是zwddoit.github.io，如果用master分支的]]></content>
       <categories>
-          
-          <category> community </category>
-          
+        <category>community</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> tools </tag>
-            
-            <tag> 博客 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-  
-  
+      <tags>
+        <tag>tools</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
 </search>
