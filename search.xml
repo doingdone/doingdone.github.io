@@ -2,6 +2,28 @@
 <search>
   <entry>
     <title><![CDATA[java]]></title>
+    <url>%2F2018%2F04%2F14%2Fjava%20copy%206%2F</url>
+    <content type="text"><![CDATA[hellohello java firstsysout(‘java is best)]]></content>
+      <categories>
+        <category>back-end</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python]]></title>
+    <url>%2F2018%2F04%2F14%2Fpython%20copy%2F</url>
+    <content type="text"><![CDATA[introduce人生苦短，我用python]]></content>
+      <categories>
+        <category>back-end</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[java]]></title>
     <url>%2F2018%2F04%2F14%2Fjava%20copy%202%2F</url>
     <content type="text"><![CDATA[hellohello java firstsysout(‘java is best)]]></content>
       <categories>
@@ -24,17 +46,6 @@
   </entry>
   <entry>
     <title><![CDATA[java]]></title>
-    <url>%2F2018%2F04%2F14%2Fjava%20copy%204%2F</url>
-    <content type="text"><![CDATA[hellohello java firstsysout(‘java is best)]]></content>
-      <categories>
-        <category>back-end</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[java]]></title>
     <url>%2F2018%2F04%2F14%2Fjava%20copy%205%2F</url>
     <content type="text"><![CDATA[hellohello java firstsysout(‘java is best)]]></content>
       <categories>
@@ -45,8 +56,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[python]]></title>
+    <url>%2F2018%2F04%2F14%2Fpython%2F</url>
+    <content type="text"><![CDATA[introduce人生苦短，我用python]]></content>
+      <categories>
+        <category>back-end</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[java]]></title>
-    <url>%2F2018%2F04%2F14%2Fjava%20copy%206%2F</url>
+    <url>%2F2018%2F04%2F14%2Fjava%20copy%204%2F</url>
     <content type="text"><![CDATA[hellohello java firstsysout(‘java is best)]]></content>
       <categories>
         <category>back-end</category>
@@ -78,30 +100,13 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[python]]></title>
-    <url>%2F2018%2F04%2F14%2Fpython%20copy%2F</url>
-    <content type="text"><![CDATA[introduce人生苦短，我用python]]></content>
-      <categories>
-        <category>back-end</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[python]]></title>
-    <url>%2F2018%2F04%2F14%2Fpython%2F</url>
-    <content type="text"><![CDATA[introduce人生苦短，我用python]]></content>
-      <categories>
-        <category>back-end</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F04%2F13%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F04%2F13%2Fhello-world%2F</url>
+    <url>%2F2018%2F04%2F13%2Fhello-world%20copy%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
