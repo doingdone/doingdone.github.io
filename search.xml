@@ -3,9 +3,9 @@
   <entry>
     <title><![CDATA[Hexo]]></title>
     <url>%2F2018%2F04%2F13%2Fhexo%2F</url>
-    <content type="text"><![CDATA[hexo yarn global add hexo mkdir blog &amp;&amp; cd blog yarn init hexo themes github add repo upload repo other yarn add hexo-deployer-git hexo clean hexo generate hexo deploy 访问 https://yourgithubname.github.io 注意 仓库名必须是zwddoit.github.io，如果用master分支的]]></content>
+    <content type="text"><![CDATA[安装 依赖 node yarn yarn global add hexo mkdir blog &amp;&amp; cd blog yarn init github pages add repo 仓库名必须是github用户名，比如username.github.io config repo settings -&gt; GitHub Pages -&gt; 选择master分支 -&gt; save deploy 安装插件 yarn add hexo-deployer-git 修改配置文件 deploy: type: git repo: git@github.com:username/username.github.io.git branch: master 配置 主题 下载后，修改根配置下的主题名称；主题配置中修改相关项。 配置后的动作 hexo clean hexo generate hexo deploy 访问https://yourgithubname.github.io]]></content>
       <categories>
-        <category>community</category>
+        <category>工具</category>
       </categories>
       <tags>
         <tag>tools</tag>
