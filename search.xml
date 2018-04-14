@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[Hexo]]></title>
-    <url>%2F2018%2F04%2F13%2Fhello-world%2F</url>
+    <url>%2F2018%2F04%2F13%2Fhexo%2F</url>
     <content type="text"><![CDATA[hexo yarn global add hexo mkdir blog &amp;&amp; cd blog yarn init hexo themes github add repo upload repo other yarn add hexo-deployer-git hexo clean hexo generate hexo deploy 访问 https://yourgithubname.github.io 注意 仓库名必须是zwddoit.github.io，如果用master分支的]]></content>
       <categories>
         <category>community</category>
