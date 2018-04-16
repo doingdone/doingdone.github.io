@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-16T00:37:38.226Z</updated>
+  <updated>2018-04-15T15:50:54.870Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Java</title>
-    <link href="http://yoursite.com/2018/04/13/hexo2/"/>
-    <id>http://yoursite.com/2018/04/13/hexo2/</id>
-    <published>2018-04-13T13:26:29.749Z</published>
-    <updated>2018-04-16T00:37:38.226Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h3><blockquote><p>node<br>yarn<br>yarn global add hexo</p></blockquote><h3 id="start"><a href="#start" class="headerlink" title="start"></a>start</h3><blockquote><p>mkdir blog &amp;&amp; cd blog<br>yarn init</p></blockquote><h2 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a>github pages</h2><h3 id="add-repo"><a href="#add-repo" class="headerlink" title="add repo"></a>add repo</h3><blockquote><p>仓库名必须是github用户名，比如username.github.io</p></blockquote><h3 id="config-repo"><a href="#config-repo" class="headerlink" title="config repo"></a>config repo</h3><blockquote><p>settings -&gt; GitHub Pages -&gt; 选择master分支 -&gt; save</p></blockquote><h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><blockquote><p>安装插件</p></blockquote><p>yarn add hexo-deployer-git</p><blockquote><p>修改配置文件</p></blockquote><p>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:username/username.github.io.git<br>  branch: master</p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><blockquote><p>下载后，修改根配置下的主题名称；<br>主题配置中修改相关项。</p></blockquote><h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><blockquote><p>添加page<br>添加文章（分类、标签）</p></blockquote><h3 id="配置后的动作"><a href="#配置后的动作" class="headerlink" title="配置后的动作"></a>配置后的动作</h3><ul><li><p>hexo clean</p></li><li><p>hexo generate</p></li><li><p>hexo deploy</p></li></ul><h2 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h2><p><a href="https://yourgithubname.github.io" target="_blank" rel="noopener">https://yourgithubname.github.io</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;h3 id=&quot;依赖&quot;&gt;&lt;a href=&quot;#依赖&quot; class=&quot;headerlink&quot; title=&quot;依赖&quot;&gt;&lt;/a&gt;依赖&lt;/h3&gt;&lt;block
-      
-    
-    </summary>
-    
-      <category term="tools" scheme="http://yoursite.com/categories/tools/"/>
-    
-    
-      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
-    
-  </entry>
   
   <entry>
     <title>Hexo</title>
@@ -65,6 +40,35 @@
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
       <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java</title>
+    <link href="http://yoursite.com/2018/04/13/hexo2/"/>
+    <id>http://yoursite.com/2018/04/13/hexo2/</id>
+    <published>2018-04-13T13:26:29.749Z</published>
+    <updated>2018-04-16T01:07:01.179Z</updated>
+    
+    <content type="html"><![CDATA[<p>Putong OJ – 一个看上去很普通的 Online Judge，现已上线</p><p>Features<br>说一些我自认为可以称得上特性的”特性”</p><p>单页应用</p><p>估计现在没有一个 OJ 采用的是单页应用吧。</p><p>其实最初开发单页应用的一个初衷是尽可能减轻服务器的压力，因为学校的服务器不是很好，这一点我后面还会说明。所以我觉得相比于后端渲染，前端渲染能减轻服务器压力。</p><p>另外，采用单页应用，那么后端就可以采用 restful 设计，后端的编写压力就减少了不少。前端方面因为采用的是 Vue 作为框架，开发上相对简单点，毕竟 vue 的学习难度比 react 要小一点，而且现在与 vue 相关的现成组件也不少，因此 偷懒 短期开发也是相对比较简单的。而且，我一个毕业狗，考虑到未来学弟学妹的维护难度，或许选择 vue 会好一点吧。</p><p>Koa v2 + Restful</p><p>后端上采用了 Node.js，而且采用了 koa v2 框架，摆脱了 callback hell，并且用上 async / await，因此在代码编写给人的快感自然要大于 Express。并且摆脱了后端渲染，restful 的后端框架说实话真的轻松了不少。</p><p>干死 IE8</p><p>在这里我还是 激进 了一点。保守一点说，现在大学内有一部分机子其实仍在坚持 IE8，而且是仅有一个 IE8 浏览器。如果从保证运行的角度看，我其实有责任兼容 IE8 的。但是从另一个角度看，我为何要兼容 IE8:</p><p>现在都 2017 年，IE8 本来就该被淘汰，再怎么说 IE10 以上也是要的，而且学校这边有些机房的机子已经配备了 Chrome，那么其它机子同样配置 Chrome 也是早晚的事。<br>我何必要拿 IE8 折磨自己？如果要兼容 IE8，那么我至少 vue 都不能用了。既然连 vue 都不能用了，那写单页应用的难度就增加的不是一点半点。总不能让我用 jQuery 去写单页应用吧。。<br>跟上一条类似，一是保证我开发轻松，二是保证后来的学弟学妹维护轻松，我使用了很多一些现成的且简单易用的前端库，二这些前端库对浏览器的兼容性不一，但要保证全部都能正常运行，那么 IE 还是别想了。。<br>redis + mongodb</p><p>严格意义上说不上特性。但是确实觉得 redis + mongodb 确实省了不少力气。最直接的一点是 mongodb 的字段属性可以是数组，我可以用一个列表即可表示一个比赛内所有题目的 id，如果换作 mysql 的话，估计又多一张表了吧。有时感觉数据里的表就和代码行数一样，越多越容易出问题，所以还是尽量控制在可承受的范围内。</p><p>开发杂想<br>开发初衷</p><p>我写的这个 OJ 应该是第三代了。第一代是一名学长在 hustoj 起初上改写的 OJ。这个 OJ 用了大概 7，8 年了吧，而且还是部署在一台实体机里。估计跟机器老旧也有点关系，这台机器在某次拿去办比赛之后突然损坏了，而且是硬件损坏了，但幸运地是硬盘没问题，还可以把里面的数据取出来。</p><p>在这种情况下，上一届某学长决定重新写一个 OJ，而且为了表决心，毕业设计的题目就是作一个 OJ。在他的毕业设计任务书里也清楚写到要用 Golang + vue 的组合写一个 OJ。不过最后，他跑路了。。。他因为某些原因，并没有开发出一个新的 OJ，而是拿了 Github 上的一个用 Golang 写的但没用 vue 的 OJ 充当毕业设计了。然后这个 OJ 最后部署到了学校的云服务器上，并且还是用 docker 部署，就这样开始使用了。不过一个问题是，这位学长没有同步以前的数据，所以这个 OJ 部署上去后并没有以前的题目，而是全新的只有一道 A+B 的题目。这个 OJ 就是第二代 OJ 了，就这样用了一年，直到我重写。</p><p>第二代 OJ 其实也还好，毕竟这项目在 Github 上也维护了一段时间了，开发者也在生产环境上使用了一段时间了。因此，重写 OJ 更多的是出于我们自身的原因。一个比较直接但也有点尴尬的原因是这个 OJ 是用 Golang 写的。如果没人会 Golang，那么维护这个 OJ 就有点难了，因为指导老师会时不时要求对 OJ 做些改动。我不想否认 Golang 是一门优秀的语言，但问题是放在我所在的校园内，愿意学习 Golang 的人太少，包括我自己。我不想为了一个 OJ 而去学 Golang，更何况在我已经想用 Node 改写的情况下。另外，至少目前 Golang 的工作岗位相对较少，对某些人来说，学习 Golang 的动力略有不足。同样是学校不会教的语言，学习 PHP, Java, JavaScript, Python 对学生还是主流。</p><p>另一个改写的原因是，就是我单纯地想写一个 JS 前后端全包的网站了。这一点确实是出于自身利益。</p><p>语言选择</p><p>语言选择是第一道坎。如上文所说，其实有四个比较好的选择: PHP, Java, JavaScript, Python。一个首先排除 Java，尽管很多人写过 Java，但我个人对 Java 已经有点反感，不认同这一门废话多和设计模式多的语言; 对于 PHP，我没有学过 PHP，而且从我个人的理解看，PHP7 + Laravel 或许是可以考虑的，其它 PHP 版本和 PHP 框架似乎显得不怎么样; 对于 JavaScript 和 Python，我个人还是比较喜欢的，对于前者，只要搞前端的人都会，对于后者，学习成本低，而且学习的人也多，毕竟 Python 不止能用于 Web 开发。之所以选择 JavaScript 而不是 Python，只是单纯地认为 Node.js 性能会优于 Python，毕竟要考虑到学校给的机器挺一般的。另外选择 JS 的话，前后端都是 JS，对于维护者来说，或许也会轻松点吧。</p><p>学校的服务器</p><p>虽然平时用用是放在学校的云服务器上，可能还好点。但是到了比赛，为了搞起局域网，不得不把 OJ 弄到一个实体机并搬到比赛场地来，然而这个实体机真心不行。至少上一年的比赛就出了大问题，学生访问机器时，会出现“阻塞”，有时能访问，有时显示无响应。然后看机器上的 log，也没抛出异常，据学长说是并发可能有问题。</p><p>虽然不知道是不是真的是并发问题，但如果考虑到并发的话，目前除了 Golang，应该也只有 Node 是一个好的选择了吧。</p><p>版本维护</p><p>版本维护确实有点糟糕。或者说最初的版本维护根本说不上版本维护吧，感觉像打工作报告似的，每天写写今天做了啥。后来出现的一个问题是，版本控制形同虚设，后来我就几乎没做，然后更糟糕的是，我同时在两三台机器上开发，导致三台机器上的版本又不同步，此时我又想起了同步的好处 (╯°□°）╯︵ ┻━┻。</p><p>后来伴随着 koa v1 到 koa v2 的重写，以及前端增加 vuex，我干脆把 Github 上的项目删了重建，重新做了一个版本控制。这次做版本控制前又温习了一遍 git 的常用命令，开始搞起分支。而且发现 git 还有 archive 这个好用的命令。</p><p>部署上线</p><p>本来也想用 docker 部署的，无奈发现 npm 在 docker 里的速度实在是感人(。ヘ°)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Putong OJ – 一个看上去很普通的 Online Judge，现已上线&lt;/p&gt;
+&lt;p&gt;Features&lt;br&gt;说一些我自认为可以称得上特性的”特性”&lt;/p&gt;
+&lt;p&gt;单页应用&lt;/p&gt;
+&lt;p&gt;估计现在没有一个 OJ 采用的是单页应用吧。&lt;/p&gt;
+&lt;p&gt;其实最初开发单页应
+      
+    
+    </summary>
+    
+      <category term="tools" scheme="http://yoursite.com/categories/tools/"/>
+    
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
   </entry>
   
