@@ -151,6 +151,7 @@
         })
     }
 
+    
     // 滾動懸停
     (function(){
       var nav = document.querySelector('#navbar .nav')
@@ -239,4 +240,36 @@
             navbar.classList.toggle('overflow-hidden')
         }
     }())
+
+    // Reword
+
+    var doReward = function () {
+      var reward = $('#reward'),
+          close = $('#reward-close'),
+          rewardCode = $('#rewardCode'),
+          rewardCheck = $('.reward-select-item'),
+          mask = $('.mask');
+      if (reward) {
+          var rewardBtn = $('#rewardBtn');
+          rewardBtn.click(function () {
+              reward.addClass('in ready');
+              mask.addClass('in');
+          });
+          rewardCheck.click(function () {
+              $(this).addClass('checked').siblings(rewardCheck).removeClass('checked');
+              rewardCode.attr('src', $(this).attr('data-id') === 'wechat' ? this.dataset.wechat : this.dataset.alipay);
+          });
+          close.click(function () {
+              Blog.hideMask(reward);
+          });
+          mask.click(function () {
+              Blog.hideMask(reward);
+          });
+      }
+    }
+
+    //Reward
+    if (window.claudiaConfig.reward === 1 || window.claudiaConfig.reward === 2) {
+      doReward();
+    } 
 })(jQuery);
