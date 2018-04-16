@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html class="full-height">
 <head>
   <meta charset="utf-8">
-  <meta name="baidu-site-verification" content="L6Lm9d5Crl"/>
-  
-  
-  
+  <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
   <title>works | 张小一的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,510 +20,305 @@
 <meta name="twitter:title" content="works">
 <meta name="twitter:description" content="坚定信念，有追求，专注成果为导向，树立目标，坚持不懈，勇敢，乐观面对工作和生活中的困难和挑战，拒绝抱怨，拒绝懒惰拖延，平庸的人总是抱怨自己不懂的事情。不懊悔过去和幻想未来，实践中总结，树立责任感和责任心，实现自我成长！">
   
-    <link rel="alternative" href="/atom.xml" title="张小一的博客" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="张小一的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/img/favicon.png">
+    <link rel="icon" href="/favicon.png">
   
   
-  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/layout.css">
   
-  
-      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  
-  <!-- 加载特效 -->
-    <script src="/js/pace.js"></script>
-    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
-  <script>
-      var yiliaConfig = {
-          fancybox: true,
-          animate: true,
-          isHome: false,
-          isPost: false,
-          isArchive: false,
-          isTag: false,
-          isCategory: false,
-          open_in_new: false
-      }
-  </script>
+
 </head>
+
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-
-        <a href="/" class="profilepic">
-            
-            <img lazy-src="/img/avatar.png" class="js-avatar">
-            
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">非专业程序员</a></h1>
-        </hgroup>
-        
-        <p class="header-subtitle">胆小认生，不易相处</p>
-        
-        
-            <form>
-                <input type="text" class="st-default-search-input search" id="local-search-input" placeholder="搜索一下" autocomplete="off">
-            </form>
-            <div id="local-search-result"></div>
-        
-        
-            <script type="text/javascript">
-                (function() {
-                    'use strict';
-                    function getMatchData(keyword, data) {
-                        var matchData = [];
-                        for(var i =0;i<data.length;i++){
-                            if(data[i].title.toLowerCase().indexOf(keyword)>=0) 
-                                matchData.push(data[i])
-                        }
-                        return matchData;
-                    }
-                    var $input = $('#local-search-input');
-                    var $resultContent = $('#local-search-result');
-                    $input.keyup(function(){
-                        $.ajax({
-                            url: '/search.json',
-                            dataType: "json",
-                            success: function( json ) {
-                                var str='<ul class=\"search-result-list\">';                
-                                var keyword = $input.val().trim().toLowerCase();
-                                $resultContent.innerHTML = "";
-                                if ($input.val().trim().length <= 0) {
-                                    $resultContent.empty();
-                                    $('#switch-area').show();
-                                    return;
-                                }
-                                var results = getMatchData(keyword, json);
-                                if(results.length === 0){
-                                    $resultContent.empty();
-                                    $('#switch-area').show();
-                                    return;
-                                } 
-                                for(var i =0; i<results.length; i++){
-                                    str += "<li><a href='"+ results[i].url +"' class='search-result-title'>"+ results[i].title +"</a></li>";
-                                }
-                                str += "</ul>";
-                                $resultContent.empty();
-                                $resultContent.append(str);
-                                $('#switch-area').hide();
-                            }
-                        });
-                    });
-                })();
-            </script>
-        
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a  href="/archives/">所有文章</a></li>
-                        
-                            <li><a  href="/categories/开发工具/">玩转开发工具</a></li>
-                        
-                            <li><a  href="/categories/digital">玩转数码</a></li>
-                        
-                            <li><a  href="/categories/algorithm">算法学习</a></li>
-                        
-                            <li><a  href="/about/">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fl github"  target="_blank" href="/xxxxx" title="github">github</a>
-                            
-                                <a class="fl weibo"  target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
-                            
-                                <a class="fl rss"  target="_blank" href="/atom.xml" title="rss">rss</a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/tools/" style="font-size: 20px;">tools</a> <a href="/tags/博客/" style="font-size: 10px;">博客</a>
-                    </div>
-                </section>
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="http://blog.csdn.net/baidu_21483933">csdn</a>
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="https://segmentfault.com/blog/maocg_web">segmentfault</a>
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="http://www.jianshu.com/users/eb37ef89c746/latest_articles">简书</a>
-                    
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">爱动漫,爱游戏,爱编程,爱运动,爱的太多了!</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>
-</div>
-
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">非专业程序员</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                
-                    <img lazy-src="/img/avatar.png" class="js-avatar">
-                
+  <header id="navbar" class="overflow-hidden">
+  <div class="container">
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">doingdone</span>'s Blog
             </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">非专业程序员</a></h1>
-            </hgroup>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
             
-            <p class="header-subtitle">胆小认生，不易相处</p>
+            <a class="nav-item" href="/">
+                Home
+            </a>
             
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/categories/开发工具/">玩转开发工具</a></li>
-                
-                    <li><a href="/categories/digital">玩转数码</a></li>
-                
-                    <li><a href="/categories/algorithm">算法学习</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                <div class="social">
-                    
-                        <a class="github" target="_blank" href="/xxxxx" title="github">github</a>
-                    
-                        <a class="weibo" target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
-                    
-                        <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
-                    
-                </div>
-            </nav>
-        </header>
-    </div>
-</nav>
-      <div class="body-wrap"><article id="works-" class="article article-type-works" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/works/index.html" class="article-date">
-      <time datetime="2018-04-14T08:17:58.000Z" itemprop="datePublished">2018-04-14</time>
-</a>
+            <a class="nav-item" href="/works">
+                My Works
+            </a>
+            
+            <a class="nav-item" href="/about">
+                About
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/works">
+                My Works
+            </a>
+            
+            <a class="nav-item flex-1" href="/about">
+                About
+            </a>
+            
+        </div>
+    </nav>
+  </div>
+</header>
 
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      works
-    </h1>
-  
+  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
+      <div class="main-inner-content">
+          <style>
 
+    header .bg-header {
+        height: 560px;
+        /*background-color: #62A4FF;*/
+        background-image: -webkit-linear-gradient(top, #54D3DD, #9778F9)
+    }
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
+    /*头像*/
+    .bg-header .avatar img {
+        border-radius: 50%;
+        margin-top: 100px;
+        max-width: 170px;
+    }
 
-        
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <style>
-    .article-meta {
-        display: none;
+    .bg-header h1,
+    .bg-header h2 {
+        color: white;
     }
-    #container .article .article-title {
-        padding-right: 0;
+
+    /*姓名*/
+    .bg-header h1 {
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px rgba(15, 15, 15, .3);
     }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
+
+    /*描述*/
+    .bg-header h2 {
+        font-size: 18px;
+        margin-top: 12px;
     }
-    .article-header:hover {
-        border-left: none;
+
+    /*整个作品展示区*/
+    .works-area {
+        margin-top: -175px;
     }
-    .article-title {
-        font-size: 1.6em
+
+    .works-area .works-item {
+        width: 80%;
+        max-width: 1200px;
+
+        border-radius: 2px;
+        border: 1px solid #eee8d5;
+        margin: 25px auto;
+        box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
     }
-    .article-meta {
-        display: none;
+
+    .works-item-img {
+        margin: auto -26px;
     }
-    .article-entry hr {
+
+    .works-item-img img {
+        width: 100%;
+    }
+
+    .works-area .works-item {
+        background: white;
+        padding: 0 25px 15px;
+    }
+
+    .works-item .works-content {
+        padding-top: 15px;
+    }
+
+    .works-item .title {
+        height: 50px;
         margin: 0;
     }
-    #container .article-info-post.article-info {
-      display: none;
-      }
-    #container .article .article-title {
-    padding: 0;
+
+    .works-item .title{
+        font-size: 18px;
+    }
+
+    .works-item .use span {
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 0 4px;
+        border: thin solid #795548;
+    }
+
+    .works-item .subtitle {
+        margin: 0;
+        font-size: 17px;
     }
 </style>
 
-
-          
-        
-      
-    </div>
-    
-  </div>
-  
-    
-
-
-
-  
-</article>
-
-
-
-<div class="bdsharebuttonbox">
-	<a href="#" class="fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="fa fa-weixin" data-cmd="weixin" title="分享到微信"></a>
-	<a href="#" class="fa fa-qq" data-cmd="sqq" title="分享到QQ好友"></a>
-	<a href="#" class="fa fa-facebook-official" data-cmd="fbook" title="分享到Facebook"></a>
-	<a href="#" class="fa fa-twitter" data-cmd="twi" title="分享到Twitter"></a>
-	<a href="#" class="fa fa-linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
-	<a href="#" class="fa fa-files-o" data-cmd="copy" title="分享到复制网址"></a>
-</div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
-
-
-
-    
-        <section id="comments">
-<!-- <link rel="stylesheet" href="/css/gitment.min.css"> -->
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: 'works', // 可选。默认为 location.href
-  owner: 'doingdone',
-  repo: 'doingdone.github.io',
-  oauth: {
-    client_id: '4a2ccfacfbadf871f6b0',
-    client_secret: '7f30e2219a169fd3daf1389abcc86ee630fa12bf',
-  },
-})
-gitment.render('comments')
-</script>
-</section>
-    
-
-
-
-
-
-
-    <script>
-        
-    </script>
-
-</div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                &copy; 2018 非专业程序员
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank">Hexo &nbsp;&nbsp;</a><a href="https://github.com/maochunguang" target="_blank">Blog</a> by tommy
+<div class="works-container" style="background-color: #fafafa">
+    <header>
+        <div class="bg-header is-flex justify-center">
+            <div class="profile">
+                <div class="avatar">
+                    <img src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-circle-512.png">
+                </div>
+                <div class="personal-profile has-text-centered content">
+                    <h1>
+                        doingdone
+                    </h1>
+                    <h2>-- 个人作品集 --</h2>
+                </div>
             </div>
         </div>
+    </header>
+    <div class="container works-area">
         
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >极客到访数: 
-                            <span id="busuanzi_value_site_uv"></span>
-                        </span>
+            <div class="works-item">
+                <div class="title is-flex center justify-space-between ">
+                    <span>
+                        <strong>Apple 官网临摹</strong>
                     </span>
-                
-                
-                    <span>, </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
-                            <span id="busuanzi_value_page_pv"></span>
-                        </span>
+                    <span class="title-date tag is-dark">
+                        2016.3
                     </span>
-                
+                </div>
+                <div class="works-item-img">
+                    <img src="http://o7bkkhiex.bkt.clouddn.com/item-apple.jpg">
+                </div>
+                <div class="works-content">
+                    <div class="use text-warning">
+                        
+                        <span>
+                                jQuery
+                            </span>
+                        
+                    </div>
+                    　
+                    <p class="subtitle"> 根据美版apple官网临摹 </p>
+
+                    <p class="text-muted"> 临摹 2016 年三月份 Apple 美版单页面。 </p>
+                </div>
+                <div class="is-flex" style="margin-top: 30px;">
+                    <a class="button is-info" href="http://haojen.github.io/apple-linmo/" target="_blank">
+                        Open it
+                    </a>
+                </div>
+
+            </div>
+        
+            <div class="works-item">
+                <div class="title is-flex center justify-space-between ">
+                    <span>
+                        <strong>Anisina</strong>
+                    </span>
+                    <span class="title-date tag is-dark">
+                        2016.5
+                    </span>
+                </div>
+                <div class="works-item-img">
+                    <img src="http://o7bkkhiex.bkt.clouddn.com/Anisina.png">
+                </div>
+                <div class="works-content">
+                    <div class="use text-warning">
+                        
+                        <span>
+                                jQuery
+                            </span>
+                        
+                        <span>
+                                Bootstrap
+                            </span>
+                        
+                        <span>
+                                Node.js
+                            </span>
+                        
+                        <span>
+                                EJS
+                            </span>
+                        
+                        <span>
+                                Hexo
+                            </span>
+                        
+                        <span>
+                                SASS
+                            </span>
+                        
+                    </div>
+                    　
+                    <p class="subtitle"> 基于 Hexo 制作的个人博客主题 </p>
+
+                    <p class="text-muted"> Hexo 是某位台湾友人基于 Node.js 编写的博客框架 </p>
+                </div>
+                <div class="is-flex" style="margin-top: 30px;">
+                    <a class="button is-info" href="http://haojen.github.io/" target="_blank">
+                        Open it
+                    </a>
+                </div>
+
             </div>
         
     </div>
+</div>
+      </div>
+  </div>
+  <style>
+  #footer {
+    min-height: 10vh;
+    background: black;
+    color: #fff;
+  }
+
+  #footer a {
+    color: #e1e1e1;
+  }
+</style>
+<footer id="footer" class="has-text-centered is-flex center">
+  <div class="container has-padding">
+    <div>
+      <div>
+        <!--请您保留作者署名, 主题制作来之不易-->
+        <!-- Theme by <a href="http://haojen.github.io/">Haojen Ma</a> -->
+        <br>
+        Copyright © 非专业程序员 2018
+        <!-- <br>
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -->
+      </div>
+    </div>
+  </div>
 </footer>
 
-    </div>
-    
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/search_core.js"></script>
+<script src="/js/script.js"></script>
 
-<script src="/js/main.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var backgroundnum = 1;
-            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
-            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
-        })
-    </script>
-
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'xxxxx', 'auto');
-ga('send', 'pageview');
-
-</script>
-<!-- End Google Analytics -->
-
-
-
-	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?xxxxxx";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
-</div>
-<script>
-    $(document).ready(function() {
-        if ($("#comments").length < 1) {
-            $("#scroll > a:nth-child(2)").hide();
-        };
-    })
-</script>
-
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-
-  <script language="javascript">
-    $(function() {
-        $("a[title]").each(function() {
-            var a = $(this);
-            var title = a.attr('title');
-            if (title == undefined || title == "") return;
-            a.data('title', title).removeAttr('title').hover(
-            function() {
-                var offset = a.offset();
-                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
-                    top: offset.top - a.outerHeight() - 15,
-                    left: offset.left + a.outerWidth()/2 + 1
-                }).fadeIn(function() {
-                    var pop = $(this);
-                    setTimeout(function() {
-                        pop.remove();
-                    }, pop.text().length * 800);
-                });
-            }, function() {
-                $("#anchortitlecontainer").remove();
-            });
-        });
-    });
-</script>
-
-
-  </div>
 </body>
 </html>
