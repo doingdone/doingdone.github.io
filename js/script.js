@@ -268,6 +268,7 @@
       }
     }
 
+    alert(window.claudiaConfig.reward)
     //Reward
     if (window.claudiaConfig.reward === 1 || window.claudiaConfig.reward === 2) {
       doReward();
