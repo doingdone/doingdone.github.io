@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-16T07:41:36.795Z</updated>
+  <updated>2018-04-16T12:21:45.949Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://yoursite.com/2018/04/13/hexo/"/>
     <id>http://yoursite.com/2018/04/13/hexo/</id>
     <published>2018-04-13T13:26:29.749Z</published>
-    <updated>2018-04-16T07:41:36.795Z</updated>
+    <updated>2018-04-16T12:21:45.949Z</updated>
     
-    <content type="html"><![CDATA[<p>GroupID格式:com.{公司/BU }.业务线.[子业务线]，最多4级。<br>说明:{公司/BU} 例如:alibaba/taobao/tmall/aliexpress 等 BU 一级;子业务线可选。<br>正例:com.taobao.jstorm 或 com.alibaba.dubbo.register<br>2) ArtifactID格式:产品线名-模块名。语义不重复不遗漏，先到仓库中心去查证一下。<br>正例:dubbo-client / fastjson-api / jstorm-tool 3) Version:详细规定参考下方。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h3><blockquote><p>node<br>yarn<br>yarn global add hexo</p></blockquote><h3 id="start"><a href="#start" class="headerlink" title="start"></a>start</h3><blockquote><p>mkdir blog &amp;&amp; cd blog<br>yarn init</p></blockquote><h2 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a>github pages</h2><h3 id="add-repo"><a href="#add-repo" class="headerlink" title="add repo"></a>add repo</h3><blockquote><p>仓库名必须是github用户名，比如username.github.io</p></blockquote><h3 id="config-repo"><a href="#config-repo" class="headerlink" title="config repo"></a>config repo</h3><blockquote><p>settings -&gt; GitHub Pages -&gt; 选择master分支 -&gt; save</p></blockquote><h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><blockquote><p>安装插件</p></blockquote><p>yarn add hexo-deployer-git</p><blockquote><p>修改配置文件</p></blockquote><p>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:username/username.github.io.git<br>  branch: master</p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><blockquote><p>下载后，修改根配置下的主题名称；<br>主题配置中修改相关项。</p></blockquote><h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><blockquote><p>添加page<br>添加文章（分类、标签）</p></blockquote><h3 id="配置后的动作"><a href="#配置后的动作" class="headerlink" title="配置后的动作"></a>配置后的动作</h3><ul><li><p>hexo clean</p></li><li><p>hexo generate</p></li><li><p>hexo deploy</p></li></ul><h2 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h2><p><a href="https://yourgithubname.github.io" target="_blank" rel="noopener">https://yourgithubname.github.io</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h3><blockquote><p>node<br>yarn<br>yarn global add hexo</p></blockquote><h3 id="start"><a href="#start" class="headerlink" title="start"></a>start</h3><blockquote><p>mkdir blog &amp;&amp; cd blog<br>yarn init</p></blockquote><h2 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a>github pages</h2><h3 id="add-repo"><a href="#add-repo" class="headerlink" title="add repo"></a>add repo</h3><blockquote><p>仓库名必须是github用户名，比如username.github.io</p></blockquote><h3 id="config-repo"><a href="#config-repo" class="headerlink" title="config repo"></a>config repo</h3><blockquote><p>settings -&gt; GitHub Pages -&gt; 选择master分支 -&gt; save</p></blockquote><h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><blockquote><p>安装插件</p></blockquote><p>yarn add hexo-deployer-git</p><blockquote><p>修改配置文件</p></blockquote><p>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:username/username.github.io.git<br>  branch: master</p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><blockquote><p>下载后，修改根配置下的主题名称；<br>主题配置中修改相关项。</p></blockquote><h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><blockquote><p>添加page<br>添加文章（分类、标签）</p></blockquote><h3 id="配置后的动作"><a href="#配置后的动作" class="headerlink" title="配置后的动作"></a>配置后的动作</h3><ul><li><p>hexo clean</p></li><li><p>hexo generate</p></li><li><p>hexo deploy</p></li></ul><h2 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h2><p><a href="https://yourgithubname.github.io" target="_blank" rel="noopener">https://yourgithubname.github.io</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;GroupID格式:com.{公司/BU }.业务线.[子业务线]，最多4级。&lt;br&gt;说明:{公司/BU} 例如:alibaba/taobao/tmall/aliexpress 等 BU 一级;子业务线可选。&lt;br&gt;正例:com.taobao.jstorm 或 com.al
+        &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;h3 id=&quot;依赖&quot;&gt;&lt;a href=&quot;#依赖&quot; class=&quot;headerlink&quot; title=&quot;依赖&quot;&gt;&lt;/a&gt;依赖&lt;/h3&gt;&lt;block
       
     
     </summary>
@@ -40,31 +40,6 @@
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
       <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>分布式锁</title>
-    <link href="http://yoursite.com/2018/04/13/java%20copy%202/"/>
-    <id>http://yoursite.com/2018/04/13/java copy 2/</id>
-    <published>2018-04-13T13:26:29.749Z</published>
-    <updated>2018-04-16T07:07:38.329Z</updated>
-    
-    <content type="html"><![CDATA[<p>分布式锁的几种实现方式：<br>在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。<br>什么是分布式锁<br>分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。<br>分布式锁需要解决的问题<br>互斥性：任意时刻，只能有一个客户端获取锁，不能同时有两个客户端获取到锁。<br>安全性：锁只能被持有该锁的客户端删除，不能由其它客户端删除。<br>死锁：获取锁的客户端因为某些原因（如down机等）而未能释放锁，其它客户端再也无法获取到该锁。<br>容错：当部分节点（redis节点等）down机时，客户端仍然能够获取锁和释放锁。<br>分布式锁的实现方式<br>数据库实现<br>缓存实现，比如redis<br>zookeeper实现<br>未完待续</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;分布式锁的几种实现方式：&lt;br&gt;在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。&lt;br&gt;什么是分布式锁&lt;br&gt;分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现
-      
-    
-    </summary>
-    
-      <category term="tools" scheme="http://yoursite.com/categories/tools/"/>
-    
-    
-      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
   </entry>
   
@@ -115,6 +90,34 @@
     
     
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL优化</title>
+    <link href="http://yoursite.com/2018/04/13/mysql%E4%BC%98%E5%8C%96/"/>
+    <id>http://yoursite.com/2018/04/13/mysql优化/</id>
+    <published>2018-04-13T13:26:29.749Z</published>
+    <updated>2018-04-16T12:28:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="查询类型"><a href="#查询类型" class="headerlink" title="查询类型"></a>查询类型</h2><blockquote><p>index<br>const<br>system</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;查询类型&quot;&gt;&lt;a href=&quot;#查询类型&quot; class=&quot;headerlink&quot; title=&quot;查询类型&quot;&gt;&lt;/a&gt;查询类型&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;index&lt;br&gt;const&lt;br&gt;system&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      
+    
+    </summary>
+    
+      <category term="storage" scheme="http://yoursite.com/categories/storage/"/>
+    
+    
+      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
     
   </entry>
   
