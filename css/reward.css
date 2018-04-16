@@ -86,3 +86,39 @@
   color: #ea6f5a;
   border-color: #ea6f5a;
 }
+.post-modal {
+  display: none;
+  position: fixed;
+  top: 24%;
+  left: 50%;
+  z-index: 120;
+  padding: 30px;
+  text-align: center;
+  color: #727272;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  opacity: 0;
+}
+.post-modal.ready {
+  visibility: hidden;
+  display: block;
+}
+.post-modal.in {
+  visibility: visible;
+  opacity: 1;
+}
+.post-modal .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: rgba(0,0,0,0.2);
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 20px;
+}
+.post-modal .close:hover,
+.post-modal .close:active {
+  color: rgba(0,0,0,0.4);
+  text-decoration: none;
+}

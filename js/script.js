@@ -242,7 +242,14 @@
     }())
 
     // Reword
-
+    var hideMask = function (target) {
+      var mask = $('.mask');
+      mask.removeClass('in');
+      if (target) {
+          target.removeClass('in')
+      }
+    }
+    
     var doReward = function () {
       var reward = $('#reward'),
           close = $('#reward-close'),
@@ -260,15 +267,14 @@
               rewardCode.attr('src', $(this).attr('data-id') === 'wechat' ? this.dataset.wechat : this.dataset.alipay);
           });
           close.click(function () {
-              Blog.hideMask(reward);
+              hideMask(reward);
           });
           mask.click(function () {
-              Blog.hideMask(reward);
+              hideMask(reward);
           });
       }
     }
 
-    alert(window.claudiaConfig.reward)
     //Reward
     if (window.claudiaConfig.reward === 1 || window.claudiaConfig.reward === 2) {
       doReward();
