@@ -6,20 +6,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
-  <title>分布式锁 | 张小一的博客</title>
+  <title>springboot web | 张小一的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="分布式锁的几种实现方式：在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。什么是分布式锁分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。分布式锁需要解决的问题互斥性：任意时刻，只能有一个">
-<meta name="keywords" content="tools">
+  <meta name="description" content="依赖123456789&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-starter-web&amp;lt;/artifactId&amp;gt;&amp;lt;/dependency&amp;gt;&amp;lt;dependency&amp;gt;    &amp;lt;gro">
+<meta name="keywords" content="springboot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="分布式锁">
-<meta property="og:url" content="http://yoursite.com/2018/04/13/java copy/index.html">
+<meta property="og:title" content="springboot web">
+<meta property="og:url" content="http://yoursite.com/2018/04/13/springboot web/index.html">
 <meta property="og:site_name" content="张小一的博客">
-<meta property="og:description" content="分布式锁的几种实现方式：在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。什么是分布式锁分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。分布式锁需要解决的问题互斥性：任意时刻，只能有一个">
+<meta property="og:description" content="依赖123456789&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-starter-web&amp;lt;/artifactId&amp;gt;&amp;lt;/dependency&amp;gt;&amp;lt;dependency&amp;gt;    &amp;lt;gro">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-16T07:07:38.329Z">
+<meta property="og:updated_time" content="2018-04-16T12:42:59.170Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分布式锁">
-<meta name="twitter:description" content="分布式锁的几种实现方式：在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。什么是分布式锁分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。分布式锁需要解决的问题互斥性：任意时刻，只能有一个">
+<meta name="twitter:title" content="springboot web">
+<meta name="twitter:description" content="依赖123456789&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;spring-boot-starter-web&amp;lt;/artifactId&amp;gt;&amp;lt;/dependency&amp;gt;&amp;lt;dependency&amp;gt;    &amp;lt;gro">
   
     <link rel="alternate" href="/atom.xml" title="张小一的博客" type="application/atom+xml">
   
@@ -137,7 +137,7 @@
     <div class="container post-box">
         <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
             <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
-                <strong>分布式锁</strong>
+                <strong>springboot web</strong>
             </h1>
             
             <div class="is-flex align-center">
@@ -148,13 +148,25 @@
             
                 <div>
                     
-                         <a class="tag is-post-tag" href="/tags/tools/">tools</a>
+                         <a class="tag is-post-tag" href="/tags/springboot/">springboot</a>
                     
                 </div>
             
         </div>
         <div class="content" style="overflow: auto">
-            <p>分布式锁的几种实现方式：<br>在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。<br>什么是分布式锁<br>分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。<br>分布式锁需要解决的问题<br>互斥性：任意时刻，只能有一个客户端获取锁，不能同时有两个客户端获取到锁。<br>安全性：锁只能被持有该锁的客户端删除，不能由其它客户端删除。<br>死锁：获取锁的客户端因为某些原因（如down机等）而未能释放锁，其它客户端再也无法获取到该锁。<br>容错：当部分节点（redis节点等）down机时，客户端仍然能够获取锁和释放锁。<br>分布式锁的实现方式<br>数据库实现<br>缓存实现，比如redis<br>zookeeper实现<br>未完待续</p>
+            <h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="thymeleaf"><a href="#thymeleaf" class="headerlink" title="thymeleaf"></a>thymeleaf</h2><p>参考[<a href="https://www.thymeleaf.org/documentation.html]" target="_blank" rel="noopener">https://www.thymeleaf.org/documentation.html]</a></p>
+<h2 id="ModelAndView"><a href="#ModelAndView" class="headerlink" title="ModelAndView"></a>ModelAndView</h2><h2 id="json"><a href="#json" class="headerlink" title="json"></a>json</h2><ul>
+<li>@RestController</li>
+</ul>
+<h2 id="相关注解"><a href="#相关注解" class="headerlink" title="相关注解"></a>相关注解</h2><ul>
+<li>@Controller</li>
+<li>@RestController</li>
+<li>@GetMapping</li>
+<li>@PostMapping</li>
+<li>@PutMapping</li>
+<li>@DeleteMapping</li>
+</ul>
 
         </div>
         <div class="post-reply">
@@ -188,7 +200,7 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: '分布式锁', // 可选。默认为 location.href
+  id: 'springboot web', // 可选。默认为 location.href
   owner: 'doingdone',
   repo: 'doingdone.github.io',
   oauth: {

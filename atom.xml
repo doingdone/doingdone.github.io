@@ -45,8 +45,8 @@
   
   <entry>
     <title>分布式锁</title>
-    <link href="http://yoursite.com/2018/04/13/java%20copy/"/>
-    <id>http://yoursite.com/2018/04/13/java copy/</id>
+    <link href="http://yoursite.com/2018/04/13/java/"/>
+    <id>http://yoursite.com/2018/04/13/java/</id>
     <published>2018-04-13T13:26:29.749Z</published>
     <updated>2018-04-16T07:07:38.329Z</updated>
     
@@ -69,27 +69,27 @@
   </entry>
   
   <entry>
-    <title>分布式锁</title>
-    <link href="http://yoursite.com/2018/04/13/java/"/>
-    <id>http://yoursite.com/2018/04/13/java/</id>
+    <title>springboot web</title>
+    <link href="http://yoursite.com/2018/04/13/springboot%20web/"/>
+    <id>http://yoursite.com/2018/04/13/springboot web/</id>
     <published>2018-04-13T13:26:29.749Z</published>
-    <updated>2018-04-16T07:07:38.329Z</updated>
+    <updated>2018-04-16T12:42:59.170Z</updated>
     
-    <content type="html"><![CDATA[<p>分布式锁的几种实现方式：<br>在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。<br>什么是分布式锁<br>分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。<br>分布式锁需要解决的问题<br>互斥性：任意时刻，只能有一个客户端获取锁，不能同时有两个客户端获取到锁。<br>安全性：锁只能被持有该锁的客户端删除，不能由其它客户端删除。<br>死锁：获取锁的客户端因为某些原因（如down机等）而未能释放锁，其它客户端再也无法获取到该锁。<br>容错：当部分节点（redis节点等）down机时，客户端仍然能够获取锁和释放锁。<br>分布式锁的实现方式<br>数据库实现<br>缓存实现，比如redis<br>zookeeper实现<br>未完待续</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><h2 id="thymeleaf"><a href="#thymeleaf" class="headerlink" title="thymeleaf"></a>thymeleaf</h2><p>参考[<a href="https://www.thymeleaf.org/documentation.html]" target="_blank" rel="noopener">https://www.thymeleaf.org/documentation.html]</a></p><h2 id="ModelAndView"><a href="#ModelAndView" class="headerlink" title="ModelAndView"></a>ModelAndView</h2><h2 id="json"><a href="#json" class="headerlink" title="json"></a>json</h2><ul><li>@RestController</li></ul><h2 id="相关注解"><a href="#相关注解" class="headerlink" title="相关注解"></a>相关注解</h2><ul><li>@Controller</li><li>@RestController</li><li>@GetMapping</li><li>@PostMapping</li><li>@PutMapping</li><li>@DeleteMapping</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;分布式锁的几种实现方式：&lt;br&gt;在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。&lt;br&gt;什么是分布式锁&lt;br&gt;分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现
+        &lt;h2 id=&quot;依赖&quot;&gt;&lt;a href=&quot;#依赖&quot; class=&quot;headerlink&quot; title=&quot;依赖&quot;&gt;&lt;/a&gt;依赖&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span 
       
     
     </summary>
     
-      <category term="tools" scheme="http://yoursite.com/categories/tools/"/>
+      <category term="spring" scheme="http://yoursite.com/categories/spring/"/>
     
     
-      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
     
   </entry>
   
