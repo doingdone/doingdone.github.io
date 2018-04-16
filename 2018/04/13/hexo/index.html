@@ -9,18 +9,18 @@
   
   <title>Hexo | 张小一的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装依赖 nodeyarnyarn global add hexo  start mkdir blog &amp;amp;&amp;amp; cd blogyarn init  github pagesadd repo 仓库名必须是github用户名，比如username.github.io  config repo settings -&amp;gt; GitHub Pages -&amp;gt; 选择master分支 -&amp;g">
+  <meta name="description" content="Hexo： 红黑树">
 <meta name="keywords" content="tools,博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2018/04/13/hexo/index.html">
 <meta property="og:site_name" content="张小一的博客">
-<meta property="og:description" content="安装依赖 nodeyarnyarn global add hexo  start mkdir blog &amp;amp;&amp;amp; cd blogyarn init  github pagesadd repo 仓库名必须是github用户名，比如username.github.io  config repo settings -&amp;gt; GitHub Pages -&amp;gt; 选择master分支 -&amp;g">
+<meta property="og:description" content="Hexo： 红黑树">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-15T15:50:54.870Z">
+<meta property="og:updated_time" content="2018-04-16T06:21:52.335Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="安装依赖 nodeyarnyarn global add hexo  start mkdir blog &amp;amp;&amp;amp; cd blogyarn init  github pagesadd repo 仓库名必须是github用户名，比如username.github.io  config repo settings -&amp;gt; GitHub Pages -&amp;gt; 选择master分支 -&amp;g">
+<meta name="twitter:description" content="Hexo： 红黑树">
   
     <link rel="alternative" href="/atom.xml" title="张小一的博客" type="application/atom+xml">
   
@@ -321,7 +321,10 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h3><blockquote>
+        <p><strong> Hexo：</strong> <excerpt in="" index="" |="" 首页摘要=""><br>红黑树<br><a id="more"></a></excerpt></p>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h3><blockquote>
 <p>node<br>yarn<br>yarn global add hexo</p>
 </blockquote>
 <h3 id="start"><a href="#start" class="headerlink" title="start"></a>start</h3><blockquote>
@@ -356,7 +359,7 @@
 </li>
 </ul>
 <h2 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h2><p><a href="https://yourgithubname.github.io" target="_blank" rel="noopener">https://yourgithubname.github.io</a></p>
-
+</the>
       
     </div>
     
@@ -367,7 +370,7 @@
         <p><span>本文标题:</span><a  href="/2018/04/13/hexo/">Hexo</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 非专业程序员 的个人博客">非专业程序员</a></p>
         <p><span>发布时间:</span>2018年04月13日 - 21时26分</p>
-        <p><span>最后更新:</span>2018年04月15日 - 23时50分</p>
+        <p><span>最后更新:</span>2018年04月16日 - 14时21分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/04/13/hexo/" title="Hexo">http://yoursite.com/2018/04/13/hexo/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/04/13/hexo/　　作者: 非专业程序员" title=""></span>
@@ -451,16 +454,22 @@
 
 
     
-        <section class="changyan" id="comments">
-  <!--<div id="uyan_frame"></div>-->
-  <div id="SOHUCS"></div>
-  <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
-  <script type="text/javascript">
-    window.changyan.api.config({
-      appid: 'xxxx',
-      conf: 'xxxxxxxxx'
-    });
-  </script>
+        <section id="comments">
+<!-- <link rel="stylesheet" href="/css/gitment.min.css"> -->
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'Hexo', // 可选。默认为 location.href
+  owner: 'doingdone',
+  repo: 'doingdone.github.io',
+  oauth: {
+    client_id: '4a2ccfacfbadf871f6b0',
+    client_secret: '7f30e2219a169fd3daf1389abcc86ee630fa12bf',
+  },
+})
+gitment.render('comments')
+</script>
 </section>
     
 
