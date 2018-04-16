@@ -152,6 +152,42 @@
                     
                 </div>
             
+
+            
+                
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+            
         </div>
         <div class="content" style="overflow: auto">
             <p>分布式锁的几种实现方式：<br>在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。<br>什么是分布式锁<br>分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。<br>分布式锁需要解决的问题<br>互斥性：任意时刻，只能有一个客户端获取锁，不能同时有两个客户端获取到锁。<br>安全性：锁只能被持有该锁的客户端删除，不能由其它客户端删除。<br>死锁：获取锁的客户端因为某些原因（如down机等）而未能释放锁，其它客户端再也无法获取到该锁。<br>容错：当部分节点（redis节点等）down机时，客户端仍然能够获取锁和释放锁。<br>分布式锁的实现方式<br>数据库实现<br>缓存实现，比如redis<br>zookeeper实现<br>未完待续</p>
