@@ -8,18 +8,18 @@
   
   <title>分布式锁 | 张小一的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="分布式锁：分布式锁的几种实现方式：在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。">
+  <meta name="description" content="分布式锁的几种实现方式：在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。什么是分布式锁分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。分布式锁需要解决的问题互斥性：任意时刻，只能有一个">
 <meta name="keywords" content="tools">
 <meta property="og:type" content="article">
 <meta property="og:title" content="分布式锁">
 <meta property="og:url" content="http://yoursite.com/2018/04/13/java/index.html">
 <meta property="og:site_name" content="张小一的博客">
-<meta property="og:description" content="分布式锁：分布式锁的几种实现方式：在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。">
+<meta property="og:description" content="分布式锁的几种实现方式：在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。什么是分布式锁分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。分布式锁需要解决的问题互斥性：任意时刻，只能有一个">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-16T06:45:11.193Z">
+<meta property="og:updated_time" content="2018-04-16T07:07:38.329Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分布式锁">
-<meta name="twitter:description" content="分布式锁：分布式锁的几种实现方式：在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。">
+<meta name="twitter:description" content="分布式锁的几种实现方式：在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。什么是分布式锁分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。分布式锁需要解决的问题互斥性：任意时刻，只能有一个">
   
     <link rel="alternate" href="/atom.xml" title="张小一的博客" type="application/atom+xml">
   
@@ -154,8 +154,7 @@
             
         </div>
         <div class="content" style="overflow: auto">
-            <p><strong> 分布式锁：</strong><br>分布式锁的几种实现方式：<br>在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。<br><a id="more"></a></p>
-<p>分布式锁的几种实现方式：<br>在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。<br>什么是分布式锁<br>分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。<br>分布式锁需要解决的问题<br>互斥性：任意时刻，只能有一个客户端获取锁，不能同时有两个客户端获取到锁。<br>安全性：锁只能被持有该锁的客户端删除，不能由其它客户端删除。<br>死锁：获取锁的客户端因为某些原因（如down机等）而未能释放锁，其它客户端再也无法获取到该锁。<br>容错：当部分节点（redis节点等）down机时，客户端仍然能够获取锁和释放锁。<br>分布式锁的实现方式<br>数据库实现<br>缓存实现，比如redis<br>zookeeper实现<br>未完待续</p>
+            <p>分布式锁的几种实现方式：<br>在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。<br>什么是分布式锁<br>分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。<br>分布式锁需要解决的问题<br>互斥性：任意时刻，只能有一个客户端获取锁，不能同时有两个客户端获取到锁。<br>安全性：锁只能被持有该锁的客户端删除，不能由其它客户端删除。<br>死锁：获取锁的客户端因为某些原因（如down机等）而未能释放锁，其它客户端再也无法获取到该锁。<br>容错：当部分节点（redis节点等）down机时，客户端仍然能够获取锁和释放锁。<br>分布式锁的实现方式<br>数据库实现<br>缓存实现，比如redis<br>zookeeper实现<br>未完待续</p>
 
         </div>
         <div class="post-reply">
@@ -180,6 +179,26 @@
                 <!-- City版安装代码已完成 -->
             
             
+            
+
+            
+                <section id="comments">
+<!-- <link rel="stylesheet" href="/css/gitment.min.css"> -->
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '分布式锁', // 可选。默认为 location.href
+  owner: 'doingdone',
+  repo: 'doingdone.github.io',
+  oauth: {
+    client_id: '4a2ccfacfbadf871f6b0',
+    client_secret: '7f30e2219a169fd3daf1389abcc86ee630fa12bf',
+  },
+})
+gitment.render('comments')
+</script>
+</section>
             
         </div>
     </div>
