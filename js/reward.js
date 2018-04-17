@@ -4,9 +4,7 @@
 
     rewardCheck.click(function () {
         $(this).addClass('checked').siblings(rewardCheck).removeClass('checked');
-        alert($(this).attr('data-id') === 'wechat')
-        alert(rewardCode.length)
-        rewardCode.attr('src', $(this).attr('data-id') === 'wechat' ? this.dataset.wechat : this.dataset.alipay);
-        alert(rewardCode.attr('src'))
+        rewardCode.attr('src', 'images/alipay_code.jpg');
+        
     });
 })(jQuery);
