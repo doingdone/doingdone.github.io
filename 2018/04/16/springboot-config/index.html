@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="full-height">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  
+  <title>springboot config | 张小一的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server:  servlet:    context-path: /patient  port: 8080spring:  thymeleaf:    encoding: UTF-8">
+<meta name="keywords" content="springboot">
+<meta property="og:type" content="article">
+<meta property="og:title" content="springboot config">
+<meta property="og:url" content="http://yoursite.com/2018/04/16/springboot-config/index.html">
+<meta property="og:site_name" content="张小一的博客">
+<meta property="og:description" content="说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server:  servlet:    context-path: /patient  port: 8080spring:  thymeleaf:    encoding: UTF-8">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-04-16T13:05:52.946Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="springboot config">
+<meta name="twitter:description" content="说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server:  servlet:    context-path: /patient  port: 8080spring:  thymeleaf:    encoding: UTF-8">
+  
+    <link rel="alternate" href="/atom.xml" title="张小一的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/layout.css">
+<link rel="stylesheet" href="/css/reward.css">
+  
+
+</head>
+
+<body>
+  <header id="navbar" class="overflow-hidden">
+  <div class="container">
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">doingdone</span>'s Blog
+            </a>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            
+            <a class="nav-item" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item" href="/works">
+                My Works
+            </a>
+            
+            <a class="nav-item" href="/about">
+                About
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/works">
+                My Works
+            </a>
+            
+            <a class="nav-item flex-1" href="/about">
+                About
+            </a>
+            
+        </div>
+    </nav>
+  </div>
+</header>
+
+  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
+      <div class="main-inner-content">
+          <!--博文页面-->
+
+<style>
+    .header-box {
+        height: 370px;
+        filter: blur(10px);
+        background-size: cover;
+        background-color: lightsteelblue;
+    }
+
+    .post-box {
+        padding: 15px;
+        padding-top: 60px;
+        min-height: 80vh;
+        margin-top: -200px;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,.8);
+    }
+
+    .post-avatar {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .flow-chart {
+        text-align: center;
+    }
+
+    img[alt="post-cover"] {
+        display: none;
+    }
+</style>
+<header>
+    <div id="header_box" class="header-box"></div>
+</header>
+<section>
+    <div class="container post-box">
+        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
+            <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
+                <strong>springboot config</strong>
+            </h1>
+            
+            <div class="is-flex align-center">
+                <img class="post-avatar" src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-circle-512.png">
+                <span style="padding:0 10px;"> <span class="sub-title">Author</span> doingdone</span>
+                <span class="post-date sub-title">Time: 2018-04-16</span>
+            </div>
+            
+                <div>
+                    
+                         <a class="tag is-post-tag" href="/tags/springboot/">springboot</a>
+                    
+                </div>
+            
+
+            
+                
+
+    
+    <div class="reward-lay">
+        <div class="reward-title">
+            <span class="reward-title">
+                请我吃糖~
+            </span>
+        </div>
+        <div class="reward-content">
+            <div class="reward-code" id="rewardCode">
+                <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+            </div>
+        </div>
+        <div class="reward-items">
+            <label class="reward-item" data-id="reward-wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+
+            <label class="reward-item" id="reward-item-alipay" data-wechat="/images/alipay_code.jpg">
+                <img class="reward-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+
+        </div>
+    </div>
+
+
+
+            
+        </div>
+        <div class="content" style="overflow: auto">
+            <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。<br>当然也可以指定配置文件，及相关的解析前缀。</p>
+<h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h2><p>application.yml</p>
+<p>server:<br>  servlet:<br>    context-path: /patient<br>  port: 8080<br>spring:<br>  thymeleaf:<br>    encoding: UTF-8<br>    mode: HTML</p>
+<p>Config.java</p>
+
+        </div>
+        <div class="post-reply">
+            
+            
+            
+
+            
+                <section id="comments">
+<!-- <link rel="stylesheet" href="/css/gitment.min.css"> -->
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'springboot config', // 可选。默认为 location.href
+  owner: 'doingdone',
+  repo: 'doingdone.github.io',
+  oauth: {
+    client_id: '4a2ccfacfbadf871f6b0',
+    client_secret: '7f30e2219a169fd3daf1389abcc86ee630fa12bf',
+  },
+})
+gitment.render('comments')
+</script>
+</section>
+            
+        </div>
+    </div>
+</section>
+<script>
+    // 获取第一张图, 用以当封面背景图
+    var img = document.querySelectorAll('img')[1]
+
+    if (img) {
+        var header_box = document.querySelector('#header_box')
+        header_box.style.backgroundImage = 'url('+ img.src +')'
+    }
+</script>
+
+<!-- 加载reward js -->
+<script src="/js/reward.js"></script>
+      </div>
+  </div>
+  <style>
+  #footer {
+    min-height: 10vh;
+    background: black;
+    color: #fff;
+  }
+
+  #footer a {
+    color: #e1e1e1;
+  }
+</style>
+<footer id="footer" class="has-text-centered is-flex center">
+  <div class="container has-padding">
+    <div>
+      <div>
+        <!--请您保留作者署名, 主题制作来之不易-->
+        <!-- Theme by <a href="http://haojen.github.io/">Haojen Ma</a> -->
+        <br>
+        Copyright © 非专业程序员 2018
+        <!-- <br>
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/search_core.js"></script>
+<script>
+  var claudiaConfig = {
+      // root: "http://yoursite.com",
+      // animate: ,
+      // isHome: false,
+      // share: ,
+      reward: 1
+  }
+</script>
+<script src="/js/script.js"></script>
+
+</body>
+</html>

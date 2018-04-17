@@ -57,3 +57,9 @@ img {
     min-width: 85px;
     height: 30px
 }
+
+.checked {
+    color: #ea6f5a;
+    border-color: #ea6f5a;
+}
+      
