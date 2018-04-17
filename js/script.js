@@ -242,41 +242,5 @@
     }())
 
     // Reword
-    var hideMask = function (target) {
-      var mask = $('.mask');
-      mask.removeClass('in');
-      if (target) {
-          target.removeClass('in')
-      }
-    }
     
-    var doReward = function () {
-      var reward = $('#reward'),
-          close = $('#reward-close'),
-          rewardCode = $('#rewardCode'),
-          rewardCheck = $('.reward-select-item'),
-          mask = $('.mask');
-      if (reward) {
-          var rewardBtn = $('#rewardBtn');
-          rewardBtn.click(function () {
-              reward.addClass('in ready');
-              mask.addClass('in');
-          });
-          rewardCheck.click(function () {
-              $(this).addClass('checked').siblings(rewardCheck).removeClass('checked');
-              rewardCode.attr('src', $(this).attr('data-id') === 'wechat' ? this.dataset.wechat : this.dataset.alipay);
-          });
-          close.click(function () {
-              hideMask(reward);
-          });
-          mask.click(function () {
-              hideMask(reward);
-          });
-      }
-    }
-
-    //Reward
-    if (window.claudiaConfig.reward === 1 || window.claudiaConfig.reward === 2) {
-      doReward();
-    } 
 })(jQuery);

@@ -32,7 +32,6 @@
   <link rel="stylesheet" href="/css/common.css">
 <link rel="stylesheet" href="/css/nav.css">
 <link rel="stylesheet" href="/css/layout.css">
-<link rel="stylesheet" href="/css/reward.css">
   
 
 </head>
@@ -159,35 +158,25 @@
             
                 
 <div class="page-reward">
-    <a id="rewardBtn" href="javascript:;">赏</a>
+    <a id="rewardBtn" class="button is-primary is-large modal-button" data-target="modal-reward">赏</a>
 </div>
 
-<div id="reward" class="post-modal reward-lay">
-    <a class="close" href="javascript:;" id="reward-close">×</a>
-    <span class="reward-title">
-        <i class="icon icon-quote-left"></i>
-        请我吃糖~
-        <i class="icon icon-quote-right"></i>
-    </span>
-    <div class="reward-content">
-        
-        <div class="reward-code">
-            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
-        </div>
-        <div class="reward-select">
-            
-            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
-                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
-            </label>
-            
-            
-            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
-                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
-            </label>
-            
-        </div>
-    </div>
-</div>
+<div class="modal modal-reward">
+    <div class="modal-background"></div>
+    <header class="modal-card-head">
+        <p class="modal-card-title">请我吃糖</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <!-- Content ... -->
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Save changes</button>
+        <button class="button">Cancel</button>
+      </footer>  
+  </div>
+
+
 
 
             
