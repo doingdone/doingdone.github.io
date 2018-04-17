@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[springboot config]]></title>
-    <url>%2F2018%2F04%2F16%2Fspringboot-config%2F</url>
-    <content type="text"><![CDATA[说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server: servlet: context-path: /patient port: 8080spring: thymeleaf: encoding: UTF-8 mode: HTML Config.java]]></content>
+    <title><![CDATA[springboot web]]></title>
+    <url>%2F2018%2F04%2F16%2Fspringboot-web%2F</url>
+    <content type="text"><![CDATA[依赖123456789&lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;&lt;/dependency&gt;&lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;&lt;/dependency&gt; config参考[https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/htmlsingle/#common-application-properties]WEB PROPERTIES 部分 thymeleaf参考[https://www.thymeleaf.org/documentation.html] ModelAndViewjson @RestController 相关注解 @Controller @RestController @GetMapping @PostMapping @PutMapping @DeleteMapping]]></content>
       <categories>
         <category>spring</category>
       </categories>
@@ -12,9 +12,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[springboot web]]></title>
-    <url>%2F2018%2F04%2F16%2Fspringboot-web%2F</url>
-    <content type="text"><![CDATA[依赖123456789&lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;&lt;/dependency&gt;&lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;&lt;/dependency&gt; config参考[https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/htmlsingle/#common-application-properties]WEB PROPERTIES 部分 thymeleaf参考[https://www.thymeleaf.org/documentation.html] ModelAndViewjson @RestController 相关注解 @Controller @RestController @GetMapping @PostMapping @PutMapping @DeleteMapping]]></content>
+    <title><![CDATA[springboot config]]></title>
+    <url>%2F2018%2F04%2F16%2Fspringboot-config%2F</url>
+    <content type="text"><![CDATA[说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server: servlet: context-path: /patient port: 8080spring: thymeleaf: encoding: UTF-8 mode: HTML Config.java]]></content>
       <categories>
         <category>spring</category>
       </categories>
