@@ -1,59 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[springboot config]]></title>
-    <url>%2F2018%2F04%2F16%2Fspringboot-config%2F</url>
-    <content type="text"><![CDATA[说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server: servlet: context-path: /patient port: 8080spring: thymeleaf: encoding: UTF-8 mode: HTML Config.java]]></content>
+<search> 
+  
+    
+    <entry>
+      <title>springboot config</title>
+      <link href="/2018/04/16/springboot-config/"/>
+      <url>/2018/04/16/springboot-config/</url>
+      <content type="html"><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。<br>当然也可以指定配置文件，及相关的解析前缀。</p><h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h2><p>application.yml</p><p>server:<br>  servlet:<br>    context-path: /patient<br>  port: 8080<br>spring:<br>  thymeleaf:<br>    encoding: UTF-8<br>    mode: HTML</p><p>Config.java</p>]]></content>
+      
       <categories>
-        <category>spring</category>
+          
+          <category> spring </category>
+          
       </categories>
-      <tags>
-        <tag>springboot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[springboot web]]></title>
-    <url>%2F2018%2F04%2F16%2Fspringboot-web%2F</url>
-    <content type="text"><![CDATA[依赖123456789&lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;&lt;/dependency&gt;&lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;&lt;/dependency&gt; config参考[https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/htmlsingle/#common-application-properties]WEB PROPERTIES 部分 thymeleaf参考[https://www.thymeleaf.org/documentation.html] ModelAndViewjson @RestController 相关注解 @Controller @RestController @GetMapping @PostMapping @PutMapping @DeleteMapping]]></content>
+      
+      
+        <tags>
+            
+            <tag> springboot </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>springboot web</title>
+      <link href="/2018/04/16/springboot-web/"/>
+      <url>/2018/04/16/springboot-web/</url>
+      <content type="html"><![CDATA[<h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><p>参考[<a href="https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/htmlsingle/#common-application-properties]" target="_blank" rel="noopener">https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/htmlsingle/#common-application-properties]</a><br>WEB PROPERTIES 部分</p><h2 id="thymeleaf"><a href="#thymeleaf" class="headerlink" title="thymeleaf"></a>thymeleaf</h2><p>参考[<a href="https://www.thymeleaf.org/documentation.html]" target="_blank" rel="noopener">https://www.thymeleaf.org/documentation.html]</a></p><h2 id="ModelAndView"><a href="#ModelAndView" class="headerlink" title="ModelAndView"></a>ModelAndView</h2><h2 id="json"><a href="#json" class="headerlink" title="json"></a>json</h2><ul><li>@RestController</li></ul><h2 id="相关注解"><a href="#相关注解" class="headerlink" title="相关注解"></a>相关注解</h2><ul><li>@Controller</li><li>@RestController</li><li>@GetMapping</li><li>@PostMapping</li><li>@PutMapping</li><li>@DeleteMapping</li></ul>]]></content>
+      
       <categories>
-        <category>spring</category>
+          
+          <category> spring </category>
+          
       </categories>
-      <tags>
-        <tag>springboot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[分布式锁]]></title>
-    <url>%2F2018%2F04%2F10%2Fjava%2F</url>
-    <content type="text"><![CDATA[分布式锁的几种实现方式：在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。什么是分布式锁分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。分布式锁需要解决的问题互斥性：任意时刻，只能有一个客户端获取锁，不能同时有两个客户端获取到锁。安全性：锁只能被持有该锁的客户端删除，不能由其它客户端删除。死锁：获取锁的客户端因为某些原因（如down机等）而未能释放锁，其它客户端再也无法获取到该锁。容错：当部分节点（redis节点等）down机时，客户端仍然能够获取锁和释放锁。分布式锁的实现方式数据库实现缓存实现，比如rediszookeeper实现未完待续]]></content>
+      
+      
+        <tags>
+            
+            <tag> springboot </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>分布式锁</title>
+      <link href="/2018/04/10/java/"/>
+      <url>/2018/04/10/java/</url>
+      <content type="html"><![CDATA[<p>分布式锁的几种实现方式：<br>在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。<br>什么是分布式锁<br>分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。<br>分布式锁需要解决的问题<br>互斥性：任意时刻，只能有一个客户端获取锁，不能同时有两个客户端获取到锁。<br>安全性：锁只能被持有该锁的客户端删除，不能由其它客户端删除。<br>死锁：获取锁的客户端因为某些原因（如down机等）而未能释放锁，其它客户端再也无法获取到该锁。<br>容错：当部分节点（redis节点等）down机时，客户端仍然能够获取锁和释放锁。<br>分布式锁的实现方式<br>数据库实现<br>缓存实现，比如redis<br>zookeeper实现<br>未完待续</p>]]></content>
+      
       <categories>
-        <category>java</category>
+          
+          <category> java </category>
+          
       </categories>
-      <tags>
-        <tag>分布式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[MySQL优化]]></title>
-    <url>%2F2018%2F04%2F07%2Fmysql%E4%BC%98%E5%8C%96%2F</url>
-    <content type="text"><![CDATA[查询类型 indexconstsystem]]></content>
+      
+      
+        <tags>
+            
+            <tag> 分布式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>MySQL优化</title>
+      <link href="/2018/04/07/mysql%E4%BC%98%E5%8C%96/"/>
+      <url>/2018/04/07/mysql%E4%BC%98%E5%8C%96/</url>
+      <content type="html"><![CDATA[<h2 id="查询类型"><a href="#查询类型" class="headerlink" title="查询类型"></a>查询类型</h2><blockquote><p>index<br>const<br>system</p></blockquote>]]></content>
+      
       <categories>
-        <category>storage</category>
+          
+          <category> storage </category>
+          
       </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hexo]]></title>
-    <url>%2F2018%2F04%2F06%2Fhexo%2F</url>
-    <content type="text"><![CDATA[安装依赖 nodeyarnyarn global add hexo start mkdir blog &amp;&amp; cd blogyarn init github pagesadd repo 仓库名必须是github用户名，比如username.github.io config repo settings -&gt; GitHub Pages -&gt; 选择master分支 -&gt; save deploy 安装插件 yarn add hexo-deployer-git 修改配置文件 deploy: type: git repo: git@github.com:username/username.github.io.git branch: master 配置主题 下载后，修改根配置下的主题名称；主题配置中修改相关项。 写作 添加page添加文章（分类、标签） 配置后的动作 hexo clean hexo generate hexo deploy 访问https://yourgithubname.github.io]]></content>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Hexo</title>
+      <link href="/2018/04/06/hexo/"/>
+      <url>/2018/04/06/hexo/</url>
+      <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h3><blockquote><p>node<br>yarn<br>yarn global add hexo</p></blockquote><h3 id="start"><a href="#start" class="headerlink" title="start"></a>start</h3><blockquote><p>mkdir blog &amp;&amp; cd blog<br>yarn init</p></blockquote><h2 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a>github pages</h2><h3 id="add-repo"><a href="#add-repo" class="headerlink" title="add repo"></a>add repo</h3><blockquote><p>仓库名必须是github用户名，比如username.github.io</p></blockquote><h3 id="config-repo"><a href="#config-repo" class="headerlink" title="config repo"></a>config repo</h3><blockquote><p>settings -&gt; GitHub Pages -&gt; 选择master分支 -&gt; save</p></blockquote><h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><blockquote><p>安装插件</p></blockquote><p>yarn add hexo-deployer-git</p><blockquote><p>修改配置文件</p></blockquote><p>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:username/username.github.io.git<br>  branch: master</p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><blockquote><p>下载后，修改根配置下的主题名称；<br>主题配置中修改相关项。</p></blockquote><h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><blockquote><p>添加page<br>添加文章（分类、标签）</p></blockquote><h3 id="配置后的动作"><a href="#配置后的动作" class="headerlink" title="配置后的动作"></a>配置后的动作</h3><ul><li><p>hexo clean</p></li><li><p>hexo generate</p></li><li><p>hexo deploy</p></li></ul><h2 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h2><p><a href="https://yourgithubname.github.io" target="_blank" rel="noopener">https://yourgithubname.github.io</a></p>]]></content>
+      
       <categories>
-        <category>工具</category>
+          
+          <category> 工具 </category>
+          
       </categories>
-      <tags>
-        <tag>tools</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> tools </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
 </search>
