@@ -1,124 +1,59 @@
-.page-reward {
-  margin: 20px 0;
-  text-align: center;
-}
-.page-reward a {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 20px;
-  color: #fff !important;
-  text-align: center;
-  border-radius: 50%;
-  display: inline-block;
-  background: main-color;
-  text-decoration: none;
-}
-.page-reward a:hover,
-.page-reward a:active {
-  color: #fff;
-  text-decoration: none !important;
-}
-.reward-title {
-  position: relative;
-  font-size: 24px;
-  line-height: 24px;
-  width: 100%;
-  text-align: center;
-}
-.reward-title .icon-quote-left,
-.reward-title .icon-quote-right {
-  position: absolute;
-  font-size: 80%;
-  color: #999;
-}
-.reward-title .icon-quote-left {
-  top: 0;
-  left: 0;
-}
-.reward-title .icon-quote-right {
-  bottom: 0;
-  right: 0;
-}
 .reward-lay {
-  width: 360px;
+    width: 360px;
+    margin: 0 auto;
 }
+
+.reward-title {
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+}
+
 .reward-content {
-  margin: 20px 0;
+    margin: 20px 0;
 }
-.reward-content .reward-code {
-  width: 200px;
-  margin: 0 auto;
+
+.reward-code {
+    width: 200px;
+    margin: 0 auto;
 }
-.reward-content .reward-select {
-  width: 100%;
+
+.reward-items {
+    width: 100%;
 }
-.reward-content .reward-select label {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: 700;
+
+.reward-item {
+    margin: 20px 5px 10px;
+    width: 156px;
+    height: 56px;
+    line-height: 54px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    cursor: pointer;
 }
-.reward-content .reward-select .reward-select-item {
-  margin: 20px 5px 10px;
-  width: 156px;
-  height: 56px;
-  line-height: 54px;
-  text-align: center;
-  border: 1px solid #e6e6e6;
-  border-radius: 4px;
-  cursor: pointer;
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
 }
-.reward-content .reward-select .reward-select-item img {
-  vertical-align: middle;
-  border: 0;
-  display: inline-block;
+
+img {
+    vertical-align: middle;
+    border: 0;
+    display: inline-block;
 }
-.reward-content .reward-select .reward-select-item .reward-select-item-wechat {
-  min-width: 112px;
-  height: 30px;
+
+.reward-item-wechat {
+    min-width: 112px;
+    height: 30px;
 }
-.reward-content .reward-select .reward-select-item .reward-select-item-alipay {
-  min-width: 85px;
-  height: 30px;
-}
-.reward-content .reward-select .checked {
-  color: #ea6f5a;
-  border-color: #ea6f5a;
-}
-.post-modal {
-  display: none;
-  position: fixed;
-  top: 24%;
-  left: 50%;
-  z-index: 120;
-  padding: 30px;
-  text-align: center;
-  color: #727272;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-  opacity: 0;
-}
-.post-modal.ready {
-  visibility: hidden;
-  display: block;
-}
-.post-modal.in {
-  visibility: visible;
-  opacity: 1;
-}
-.post-modal .close {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  color: rgba(0,0,0,0.2);
-  font-size: 25px;
-  font-weight: 800;
-  line-height: 20px;
-}
-.post-modal .close:hover,
-.post-modal .close:active {
-  color: rgba(0,0,0,0.4);
-  text-decoration: none;
+
+.reward-item-alipay {
+    min-width: 85px;
+    height: 30px
 }
