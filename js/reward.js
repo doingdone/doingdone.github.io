@@ -4,7 +4,7 @@
 
     rewardCheck.click(function () {
         $(this).addClass('checked').siblings(rewardCheck).removeClass('checked');
-        rewardCode.attr('src', 'images/alipay_code.jpg');
+        rewardCode.attr('src', '/images/alipay_code.jpg');
         
     });
 })(jQuery);
