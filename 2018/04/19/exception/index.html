@@ -6,20 +6,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
-  <title>exception | 张小一的博客</title>
+  <title>exception处理 | 张小一的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="坚定信念，有追求，专注成果为导向，树立目标，坚持不懈，勇敢，乐观面对工作和生活中的困难和挑战，拒绝抱怨，拒绝懒惰拖延，平庸的人总是抱怨自己不懂的事情。不懊悔过去和幻想未来，实践中总结，树立责任感和责任心，实现自我成长！">
-<meta name="keywords" content="spring,exception,aop,util">
+  <meta name="description" content="运行时 vs notspring统一异常处理异常日志记录异常堆栈信息">
+<meta name="keywords" content="util,spring,aop,异常">
 <meta property="og:type" content="article">
-<meta property="og:title" content="exception">
+<meta property="og:title" content="exception处理">
 <meta property="og:url" content="http://yoursite.com/2018/04/19/exception/index.html">
 <meta property="og:site_name" content="张小一的博客">
-<meta property="og:description" content="坚定信念，有追求，专注成果为导向，树立目标，坚持不懈，勇敢，乐观面对工作和生活中的困难和挑战，拒绝抱怨，拒绝懒惰拖延，平庸的人总是抱怨自己不懂的事情。不懊悔过去和幻想未来，实践中总结，树立责任感和责任心，实现自我成长！">
+<meta property="og:description" content="运行时 vs notspring统一异常处理异常日志记录异常堆栈信息">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-18T22:58:45.410Z">
+<meta property="og:updated_time" content="2018-04-18T23:15:37.862Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="exception">
-<meta name="twitter:description" content="坚定信念，有追求，专注成果为导向，树立目标，坚持不懈，勇敢，乐观面对工作和生活中的困难和挑战，拒绝抱怨，拒绝懒惰拖延，平庸的人总是抱怨自己不懂的事情。不懊悔过去和幻想未来，实践中总结，树立责任感和责任心，实现自我成长！">
+<meta name="twitter:title" content="exception处理">
+<meta name="twitter:description" content="运行时 vs notspring统一异常处理异常日志记录异常堆栈信息">
   
     <link rel="alternate" href="/atom.xml" title="张小一的博客" type="application/atom+xml">
   
@@ -138,7 +138,7 @@
     <div class="container post-box">
         <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
             <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
-                <strong>exception</strong>
+                <strong>exception处理</strong>
             </h1>
             
             <div class="is-flex align-center">
@@ -149,20 +149,20 @@
             
                 <div>
                     
-                         <a class="tag is-post-tag" href="/tags/spring/">spring</a>
+                         <a class="tag is-post-tag" href="/tags/util/">util</a>
                     
-                         <a class="tag is-post-tag" href="/tags/exception/">exception</a>
+                         <a class="tag is-post-tag" href="/tags/spring/">spring</a>
                     
                          <a class="tag is-post-tag" href="/tags/aop/">aop</a>
                     
-                         <a class="tag is-post-tag" href="/tags/util/">util</a>
+                         <a class="tag is-post-tag" href="/tags/异常/">异常</a>
                     
                 </div>
             
 
         </div>
         <div class="content" style="overflow: auto">
-            
+            <h2 id="运行时-vs-not"><a href="#运行时-vs-not" class="headerlink" title="运行时 vs not"></a>运行时 vs not</h2><h2 id="spring统一异常处理"><a href="#spring统一异常处理" class="headerlink" title="spring统一异常处理"></a>spring统一异常处理</h2><h2 id="异常日志记录"><a href="#异常日志记录" class="headerlink" title="异常日志记录"></a>异常日志记录</h2><h2 id="异常堆栈信息"><a href="#异常堆栈信息" class="headerlink" title="异常堆栈信息"></a>异常堆栈信息</h2>
         </div>
 
         
@@ -208,7 +208,7 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: 'exception', // 可选。默认为 location.href
+  id: 'exception处理', // 可选。默认为 location.href
   owner: 'doingdone',
   repo: 'doingdone.github.io',
   oauth: {

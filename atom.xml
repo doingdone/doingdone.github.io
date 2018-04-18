@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-18T22:58:45.410Z</updated>
+  <updated>2018-04-18T23:15:37.862Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,26 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>exception</title>
+    <title>exception处理</title>
     <link href="http://yoursite.com/2018/04/19/exception/"/>
     <id>http://yoursite.com/2018/04/19/exception/</id>
     <published>2018-04-18T22:51:12.000Z</published>
-    <updated>2018-04-18T22:58:45.410Z</updated>
+    <updated>2018-04-18T23:15:37.862Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="运行时-vs-not"><a href="#运行时-vs-not" class="headerlink" title="运行时 vs not"></a>运行时 vs not</h2><h2 id="spring统一异常处理"><a href="#spring统一异常处理" class="headerlink" title="spring统一异常处理"></a>spring统一异常处理</h2><h2 id="异常日志记录"><a href="#异常日志记录" class="headerlink" title="异常日志记录"></a>异常日志记录</h2><h2 id="异常堆栈信息"><a href="#异常堆栈信息" class="headerlink" title="异常堆栈信息"></a>异常堆栈信息</h2>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;运行时-vs-not&quot;&gt;&lt;a href=&quot;#运行时-vs-not&quot; class=&quot;headerlink&quot; title=&quot;运行时 vs not&quot;&gt;&lt;/a&gt;运行时 vs not&lt;/h2&gt;&lt;h2 id=&quot;spring统一异常处理&quot;&gt;&lt;a href=&quot;#spring统
+      
     
     </summary>
     
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="spring" scheme="http://yoursite.com/tags/spring/"/>
+      <category term="util" scheme="http://yoursite.com/tags/util/"/>
     
-      <category term="exception" scheme="http://yoursite.com/tags/exception/"/>
+      <category term="spring" scheme="http://yoursite.com/tags/spring/"/>
     
       <category term="aop" scheme="http://yoursite.com/tags/aop/"/>
     
-      <category term="util" scheme="http://yoursite.com/tags/util/"/>
+      <category term="异常" scheme="http://yoursite.com/tags/%E5%BC%82%E5%B8%B8/"/>
     
   </entry>
   
@@ -45,7 +52,7 @@
     <link href="http://yoursite.com/2018/04/19/logback/"/>
     <id>http://yoursite.com/2018/04/19/logback/</id>
     <published>2018-04-18T22:50:52.000Z</published>
-    <updated>2018-04-18T22:58:19.139Z</updated>
+    <updated>2018-04-18T23:05:21.245Z</updated>
     
     <summary type="html">
     
@@ -54,11 +61,11 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="util" scheme="http://yoursite.com/tags/util/"/>
-    
       <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
     
-      <category term="log" scheme="http://yoursite.com/tags/log/"/>
+      <category term="日志" scheme="http://yoursite.com/tags/%E6%97%A5%E5%BF%97/"/>
+    
+      <category term="util" scheme="http://yoursite.com/tags/util/"/>
     
   </entry>
   
@@ -67,12 +74,18 @@
     <link href="http://yoursite.com/2018/04/19/spring-mock/"/>
     <id>http://yoursite.com/2018/04/19/spring-mock/</id>
     <published>2018-04-18T22:49:34.000Z</published>
-    <updated>2018-04-18T22:49:34.200Z</updated>
+    <updated>2018-04-18T23:10:05.242Z</updated>
     
     <summary type="html">
     
     </summary>
     
+      <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="spring" scheme="http://yoursite.com/tags/spring/"/>
     
   </entry>
   
@@ -81,7 +94,7 @@
     <link href="http://yoursite.com/2018/04/18/springboot-mybatis/"/>
     <id>http://yoursite.com/2018/04/18/springboot-mybatis/</id>
     <published>2018-04-18T13:48:40.000Z</published>
-    <updated>2018-04-18T22:55:42.209Z</updated>
+    <updated>2018-04-18T23:05:04.795Z</updated>
     
     <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>springboot集成mybaits时，有mybatis官方提供的mybatis-spring-boot-starter，但mapper不可通用，开发工作量大，<br>因此使用mapper-spring-boot-starter的通用mapper。</p><p>通用Mapper都可以极大的方便开发人员。<br>可以随意的按照自己的需要选择通用方法，还可以很方便的开发自己的通用方法。<br>极其方便的使用MyBatis单表的增删改查。<br>支持单表操作，不支持通用的多表联合查询。</p><p><a href="https://github.com/abel533/Mapper" target="_blank" rel="noopener">github</a><br><a href="https://github.com/abel533/Mapper/wiki" target="_blank" rel="noopener">wiki</a></p><h2 id="pom"><a href="#pom" class="headerlink" title="pom"></a>pom</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">    &lt;scope&gt;runtime&lt;/scope&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;com.alibaba&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;druid-spring-boot-starter&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;$&#123;druid-starter.version&#125;&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--mapper--&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;tk.mybatis&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mapper-spring-boot-starter&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;$&#123;mapper-starter.version&#125;&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><ol><li>数据源配置<blockquote><p>参考druid-spring-boot-starter配置即可</p></blockquote></li><li>mybatis配置</li></ol><blockquote><p>config-location与configuration只可配置一项</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">config-location: classpath:mybatis-config.xml</span><br><span class="line">configuration:</span><br><span class="line">    map-underscore-to-camel-case: true</span><br><span class="line">    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl</span><br><span class="line">type-aliases-package:</span><br><span class="line">mapper-locations:</span><br></pre></td></tr></table></figure><ol start="3"><li>mapper配置</li></ol><blockquote><p>详见wiki</p></blockquote><blockquote><p>mappers配置项注意</p></blockquote><p>如果只使用通用mapper，可以不配置mappers，如果使用了MysqlMapper等其他mapper，而且自己定义了BaseMapper，要设置mappers。（一般BaseMapper继承Mapper和其他mapper，比如MysqlMapper）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mapper:</span><br><span class="line">    mappers:</span><br><span class="line">        - com.daijk.demo.dao.base.BaseMapper</span><br></pre></td></tr></table></figure><h2 id="开撸"><a href="#开撸" class="headerlink" title="开撸"></a>开撸</h2><h3 id="关于-MapperScan"><a href="#关于-MapperScan" class="headerlink" title="关于@MapperScan"></a>关于@MapperScan</h3><p>包名必填，并且mappers配置的类不能在包下</p><h3 id="对象关系映射"><a href="#对象关系映射" class="headerlink" title="对象关系映射"></a>对象关系映射</h3><ul><li>主键 @Id</li><li>列 @Column @ColumnType</li></ul>]]></content>
     
@@ -101,9 +114,38 @@
     
       <category term="mybatis" scheme="http://yoursite.com/tags/mybatis/"/>
     
-      <category term="persistence" scheme="http://yoursite.com/tags/persistence/"/>
+      <category term="持久化" scheme="http://yoursite.com/tags/%E6%8C%81%E4%B9%85%E5%8C%96/"/>
     
-      <category term="datasource" scheme="http://yoursite.com/tags/datasource/"/>
+      <category term="数据源" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>springboot config</title>
+    <link href="http://yoursite.com/2018/04/16/springboot-config/"/>
+    <id>http://yoursite.com/2018/04/16/springboot-config/</id>
+    <published>2018-04-16T12:55:22.000Z</published>
+    <updated>2018-04-18T22:57:33.088Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。<br>当然也可以指定配置文件，及相关的解析前缀。</p><h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h2><p>application.yml</p><p>server:<br>  servlet:<br>    context-path: /patient<br>  port: 8080<br>spring:<br>  thymeleaf:<br>    encoding: UTF-8<br>    mode: HTML</p><p>Config.java</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。&lt;br&gt;当然也可以
+      
+    
+    </summary>
+    
+      <category term="spring" scheme="http://yoursite.com/categories/spring/"/>
+    
+    
+      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
+    
+      <category term="util" scheme="http://yoursite.com/tags/util/"/>
+    
+      <category term="yml" scheme="http://yoursite.com/tags/yml/"/>
     
   </entry>
   
@@ -135,40 +177,11 @@
   </entry>
   
   <entry>
-    <title>springboot config</title>
-    <link href="http://yoursite.com/2018/04/16/springboot-config/"/>
-    <id>http://yoursite.com/2018/04/16/springboot-config/</id>
-    <published>2018-04-16T12:55:22.000Z</published>
-    <updated>2018-04-18T22:57:33.088Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。<br>当然也可以指定配置文件，及相关的解析前缀。</p><h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h2><p>application.yml</p><p>server:<br>  servlet:<br>    context-path: /patient<br>  port: 8080<br>spring:<br>  thymeleaf:<br>    encoding: UTF-8<br>    mode: HTML</p><p>Config.java</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。&lt;br&gt;当然也可以
-      
-    
-    </summary>
-    
-      <category term="spring" scheme="http://yoursite.com/categories/spring/"/>
-    
-    
-      <category term="util" scheme="http://yoursite.com/tags/util/"/>
-    
-      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
-    
-      <category term="yml" scheme="http://yoursite.com/tags/yml/"/>
-    
-  </entry>
-  
-  <entry>
     <title>分布式锁</title>
-    <link href="http://yoursite.com/2018/04/10/java/"/>
-    <id>http://yoursite.com/2018/04/10/java/</id>
+    <link href="http://yoursite.com/2018/04/10/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/"/>
+    <id>http://yoursite.com/2018/04/10/分布式锁/</id>
     <published>2018-04-10T02:30:07.000Z</published>
-    <updated>2018-04-16T12:59:57.433Z</updated>
+    <updated>2018-04-18T23:03:39.704Z</updated>
     
     <content type="html"><![CDATA[<p>分布式锁的几种实现方式：<br>在分布式架构中，由于多线程和多台服务器，何难保证顺序性。如果需要对某一个资源进行限制，比如票务，比如请求幂等性控制等，这个时候分布式锁就排上用处。<br>什么是分布式锁<br>分布式锁是控制分布式系统或不同系统之间共同访问共享资源的一种锁实现，如果不同的系统或同一个系统的不同主机之间共享了某个资源时，往往需要互斥来防止彼此干扰来保证一致性。<br>分布式锁需要解决的问题<br>互斥性：任意时刻，只能有一个客户端获取锁，不能同时有两个客户端获取到锁。<br>安全性：锁只能被持有该锁的客户端删除，不能由其它客户端删除。<br>死锁：获取锁的客户端因为某些原因（如down机等）而未能释放锁，其它客户端再也无法获取到该锁。<br>容错：当部分节点（redis节点等）down机时，客户端仍然能够获取锁和释放锁。<br>分布式锁的实现方式<br>数据库实现<br>缓存实现，比如redis<br>zookeeper实现<br>未完待续</p>]]></content>
     
@@ -193,7 +206,7 @@
     <link href="http://yoursite.com/2018/04/07/mysql%E4%BC%98%E5%8C%96/"/>
     <id>http://yoursite.com/2018/04/07/mysql优化/</id>
     <published>2018-04-06T23:35:18.000Z</published>
-    <updated>2018-04-18T22:57:51.984Z</updated>
+    <updated>2018-04-18T23:04:15.874Z</updated>
     
     <content type="html"><![CDATA[<h2 id="查询类型"><a href="#查询类型" class="headerlink" title="查询类型"></a>查询类型</h2><blockquote><p>index<br>const<br>system</p></blockquote>]]></content>
     
@@ -209,10 +222,8 @@
     
     </summary>
     
-      <category term="storage" scheme="http://yoursite.com/categories/storage/"/>
+      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-    
-      <category term="persistence" scheme="http://yoursite.com/tags/persistence/"/>
     
       <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
     
@@ -223,7 +234,7 @@
     <link href="http://yoursite.com/2018/04/06/hexo/"/>
     <id>http://yoursite.com/2018/04/06/hexo/</id>
     <published>2018-04-06T06:23:45.000Z</published>
-    <updated>2018-04-16T12:58:56.959Z</updated>
+    <updated>2018-04-18T23:02:14.757Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h3><blockquote><p>node<br>yarn<br>yarn global add hexo</p></blockquote><h3 id="start"><a href="#start" class="headerlink" title="start"></a>start</h3><blockquote><p>mkdir blog &amp;&amp; cd blog<br>yarn init</p></blockquote><h2 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a>github pages</h2><h3 id="add-repo"><a href="#add-repo" class="headerlink" title="add repo"></a>add repo</h3><blockquote><p>仓库名必须是github用户名，比如username.github.io</p></blockquote><h3 id="config-repo"><a href="#config-repo" class="headerlink" title="config repo"></a>config repo</h3><blockquote><p>settings -&gt; GitHub Pages -&gt; 选择master分支 -&gt; save</p></blockquote><h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><blockquote><p>安装插件</p></blockquote><p>yarn add hexo-deployer-git</p><blockquote><p>修改配置文件</p></blockquote><p>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:username/username.github.io.git<br>  branch: master</p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><blockquote><p>下载后，修改根配置下的主题名称；<br>主题配置中修改相关项。</p></blockquote><h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><blockquote><p>添加page<br>添加文章（分类、标签）</p></blockquote><h3 id="配置后的动作"><a href="#配置后的动作" class="headerlink" title="配置后的动作"></a>配置后的动作</h3><ul><li><p>hexo clean</p></li><li><p>hexo generate</p></li><li><p>hexo deploy</p></li></ul><h2 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h2><p><a href="https://yourgithubname.github.io" target="_blank" rel="noopener">https://yourgithubname.github.io</a></p>]]></content>
     
@@ -236,12 +247,12 @@
     
     </summary>
     
-      <category term="工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7/"/>
+      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+      <category term="other" scheme="http://yoursite.com/tags/other/"/>
     
-      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
