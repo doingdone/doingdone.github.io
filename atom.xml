@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-16T13:05:52.946Z</updated>
+  <updated>2018-04-18T14:45:15.786Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>springboot-mybatis</title>
+    <link href="http://yoursite.com/2018/04/18/springboot-mybatis/"/>
+    <id>http://yoursite.com/2018/04/18/springboot-mybatis/</id>
+    <published>2018-04-18T13:48:40.000Z</published>
+    <updated>2018-04-18T14:45:15.786Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>springboot集成mybaits时，有mybatis官方提供的mybatis-spring-boot-starter，但mapper不可通用，开发工作量大，<br>因此使用mapper-spring-boot-starter的通用mapper。</p><p>通用Mapper都可以极大的方便开发人员。<br>可以随意的按照自己的需要选择通用方法，还可以很方便的开发自己的通用方法。<br>极其方便的使用MyBatis单表的增删改查。<br>支持单表操作，不支持通用的多表联合查询。</p><p><a href="https://github.com/abel533/Mapper" target="_blank" rel="noopener">github</a><br><a href="https://github.com/abel533/Mapper/wiki" target="_blank" rel="noopener">wiki</a></p><h2 id="pom"><a href="#pom" class="headerlink" title="pom"></a>pom</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">    &lt;scope&gt;runtime&lt;/scope&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;com.alibaba&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;druid-spring-boot-starter&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;$&#123;druid-starter.version&#125;&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--mapper--&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;tk.mybatis&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mapper-spring-boot-starter&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;$&#123;mapper-starter.version&#125;&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><ol><li>数据源配置<blockquote><p>参考druid-spring-boot-starter配置即可</p></blockquote></li><li>mybatis配置</li></ol><blockquote><p>config-location与configuration只可配置一项</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">config-location: classpath:mybatis-config.xml</span><br><span class="line">configuration:</span><br><span class="line">    map-underscore-to-camel-case: true</span><br><span class="line">    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl</span><br><span class="line">type-aliases-package:</span><br><span class="line">mapper-locations:</span><br></pre></td></tr></table></figure><ol start="3"><li>mapper配置</li></ol><blockquote><p>详见wiki</p></blockquote><blockquote><p>mappers配置项注意</p></blockquote><p>如果只使用通用mapper，可以不配置mappers，如果使用了MysqlMapper等其他mapper，而且自己定义了BaseMapper，要设置mappers。（一般BaseMapper继承Mapper和其他mapper，比如MysqlMapper）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mapper:</span><br><span class="line">    mappers:</span><br><span class="line">        - com.daijk.demo.dao.base.BaseMapper</span><br></pre></td></tr></table></figure><h2 id="开撸"><a href="#开撸" class="headerlink" title="开撸"></a>开撸</h2><h3 id="关于-MapperScan"><a href="#关于-MapperScan" class="headerlink" title="关于@MapperScan"></a>关于@MapperScan</h3><p>包名必填，并且mappers配置的类不能在包下</p><h3 id="对象关系映射"><a href="#对象关系映射" class="headerlink" title="对象关系映射"></a>对象关系映射</h3><ul><li>主键 @Id</li><li>列 @Column @ColumnType</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;springboot集成mybaits时，有mybatis官方提供的mybatis-spring-boot-starter，但mapper不
+      
+    
+    </summary>
+    
+      <category term="spring" scheme="http://yoursite.com/categories/spring/"/>
+    
+    
+      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
+    
+  </entry>
   
   <entry>
     <title>springboot config</title>
