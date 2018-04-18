@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[exception]]></title>
+    <url>%2F2018%2F04%2F19%2Fexception%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+        <tag>exception</tag>
+        <tag>aop</tag>
+        <tag>util</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[logback]]></title>
+    <url>%2F2018%2F04%2F19%2Flogback%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>util</tag>
+        <tag>springboot</tag>
+        <tag>log</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[spring-mock]]></title>
+    <url>%2F2018%2F04%2F19%2Fspring-mock%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[springboot-mybatis]]></title>
     <url>%2F2018%2F04%2F18%2Fspringboot-mybatis%2F</url>
     <content type="text"><![CDATA[简介springboot集成mybaits时，有mybatis官方提供的mybatis-spring-boot-starter，但mapper不可通用，开发工作量大，因此使用mapper-spring-boot-starter的通用mapper。 通用Mapper都可以极大的方便开发人员。可以随意的按照自己的需要选择通用方法，还可以很方便的开发自己的通用方法。极其方便的使用MyBatis单表的增删改查。支持单表操作，不支持通用的多表联合查询。 githubwiki pom123456789101112131415161718&lt;dependency&gt; &lt;groupId&gt;mysql&lt;/groupId&gt; &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt; &lt;scope&gt;runtime&lt;/scope&gt;&lt;/dependency&gt;&lt;dependency&gt; &lt;groupId&gt;com.alibaba&lt;/groupId&gt; &lt;artifactId&gt;druid-spring-boot-starter&lt;/artifactId&gt; &lt;version&gt;$&#123;druid-starter.version&#125;&lt;/version&gt;&lt;/dependency&gt;&lt;!--mapper--&gt;&lt;dependency&gt; &lt;groupId&gt;tk.mybatis&lt;/groupId&gt; &lt;artifactId&gt;mapper-spring-boot-starter&lt;/artifactId&gt; &lt;version&gt;$&#123;mapper-starter.version&#125;&lt;/version&gt;&lt;/dependency&gt; 配置 数据源配置 参考druid-spring-boot-starter配置即可 mybatis配置 config-location与configuration只可配置一项 123456config-location: classpath:mybatis-config.xmlconfiguration: map-underscore-to-camel-case: true log-impl: org.apache.ibatis.logging.stdout.StdOutImpltype-aliases-package:mapper-locations: mapper配置 详见wiki mappers配置项注意 如果只使用通用mapper，可以不配置mappers，如果使用了MysqlMapper等其他mapper，而且自己定义了BaseMapper，要设置mappers。（一般BaseMapper继承Mapper和其他mapper，比如MysqlMapper） 123mapper: mappers: - com.daijk.demo.dao.base.BaseMapper 开撸关于@MapperScan包名必填，并且mappers配置的类不能在包下 对象关系映射 主键 @Id 列 @Column @ColumnType]]></content>
@@ -9,17 +41,9 @@
       </categories>
       <tags>
         <tag>springboot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[springboot config]]></title>
-    <url>%2F2018%2F04%2F16%2Fspringboot-config%2F</url>
-    <content type="text"><![CDATA[说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server: servlet: context-path: /patient port: 8080spring: thymeleaf: encoding: UTF-8 mode: HTML Config.java]]></content>
-      <categories>
-        <category>spring</category>
-      </categories>
-      <tags>
-        <tag>springboot</tag>
+        <tag>mybatis</tag>
+        <tag>persistence</tag>
+        <tag>datasource</tag>
       </tags>
   </entry>
   <entry>
@@ -31,6 +55,20 @@
       </categories>
       <tags>
         <tag>springboot</tag>
+        <tag>web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[springboot config]]></title>
+    <url>%2F2018%2F04%2F16%2Fspringboot-config%2F</url>
+    <content type="text"><![CDATA[说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server: servlet: context-path: /patient port: 8080spring: thymeleaf: encoding: UTF-8 mode: HTML Config.java]]></content>
+      <categories>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>util</tag>
+        <tag>springboot</tag>
+        <tag>yml</tag>
       </tags>
   </entry>
   <entry>
@@ -52,6 +90,7 @@
         <category>storage</category>
       </categories>
       <tags>
+        <tag>persistence</tag>
         <tag>MySQL</tag>
       </tags>
   </entry>
