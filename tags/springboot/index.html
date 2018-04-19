@@ -44,7 +44,14 @@
               <span class="logo">doingdone</span>'s Blog
             </a>
          </div>
-        
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
         <div class="nav-right nav-menu">
             <a class="nav-item" id="search">
                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -153,16 +160,14 @@
         <div class="box">
             <article class="media">
                 
-                <a href="/2018/04/16/springboot-config/">
+                <a href="/2018/04/16/springboot-web/">
                     
                     <div class="media-content">
                         <div class="content">
                             <p>
-                                <strong>springboot config</strong> <small class="post-date">at: 2018-04-16</small>
+                                <strong>springboot web</strong> <small class="post-date">at: 2018-04-16</small>
                                 <br>
-                                说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。
-demoapplication.yml
-server:  servlet:    context-path: /patient  port: 8080spring:  thymeleaf..
+                                依赖123456789&lt;dependency&gt;    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;&lt;/dependency&gt;&lt;dep..
                             </p>
                             <button class="button is-info">Read</button>
                         </div>
@@ -174,14 +179,16 @@ server:  servlet:    context-path: /patient  port: 8080spring:  thymeleaf..
         <div class="box">
             <article class="media">
                 
-                <a href="/2018/04/16/springboot-web/">
+                <a href="/2018/04/16/springboot-config/">
                     
                     <div class="media-content">
                         <div class="content">
                             <p>
-                                <strong>springboot web</strong> <small class="post-date">at: 2018-04-16</small>
+                                <strong>springboot config</strong> <small class="post-date">at: 2018-04-16</small>
                                 <br>
-                                依赖123456789&lt;dependency&gt;    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;&lt;/dependency&gt;&lt;dep..
+                                说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。
+demoapplication.yml
+server:  servlet:    context-path: /patient  port: 8080spring:  thymeleaf..
                             </p>
                             <button class="button is-info">Read</button>
                         </div>
