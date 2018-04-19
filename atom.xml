@@ -37,11 +37,11 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="util" scheme="http://yoursite.com/tags/util/"/>
-    
       <category term="spring" scheme="http://yoursite.com/tags/spring/"/>
     
       <category term="aop" scheme="http://yoursite.com/tags/aop/"/>
+    
+      <category term="util" scheme="http://yoursite.com/tags/util/"/>
     
       <category term="异常" scheme="http://yoursite.com/tags/%E5%BC%82%E5%B8%B8/"/>
     
@@ -61,11 +61,11 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
+      <category term="util" scheme="http://yoursite.com/tags/util/"/>
+    
       <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
     
       <category term="日志" scheme="http://yoursite.com/tags/%E6%97%A5%E5%BF%97/"/>
-    
-      <category term="util" scheme="http://yoursite.com/tags/util/"/>
     
   </entry>
   
@@ -83,9 +83,9 @@
       <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
       <category term="spring" scheme="http://yoursite.com/tags/spring/"/>
+    
+      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -121,35 +121,6 @@
   </entry>
   
   <entry>
-    <title>springboot config</title>
-    <link href="http://yoursite.com/2018/04/16/springboot-config/"/>
-    <id>http://yoursite.com/2018/04/16/springboot-config/</id>
-    <published>2018-04-16T12:55:22.000Z</published>
-    <updated>2018-04-18T22:57:33.088Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。<br>当然也可以指定配置文件，及相关的解析前缀。</p><h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h2><p>application.yml</p><p>server:<br>  servlet:<br>    context-path: /patient<br>  port: 8080<br>spring:<br>  thymeleaf:<br>    encoding: UTF-8<br>    mode: HTML</p><p>Config.java</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。&lt;br&gt;当然也可以
-      
-    
-    </summary>
-    
-      <category term="spring" scheme="http://yoursite.com/categories/spring/"/>
-    
-    
-      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
-    
-      <category term="util" scheme="http://yoursite.com/tags/util/"/>
-    
-      <category term="yml" scheme="http://yoursite.com/tags/yml/"/>
-    
-  </entry>
-  
-  <entry>
     <title>springboot web</title>
     <link href="http://yoursite.com/2018/04/16/springboot-web/"/>
     <id>http://yoursite.com/2018/04/16/springboot-web/</id>
@@ -173,6 +144,35 @@
       <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
     
       <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>springboot config</title>
+    <link href="http://yoursite.com/2018/04/16/springboot-config/"/>
+    <id>http://yoursite.com/2018/04/16/springboot-config/</id>
+    <published>2018-04-16T12:55:22.000Z</published>
+    <updated>2018-04-18T22:57:33.088Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。<br>当然也可以指定配置文件，及相关的解析前缀。</p><h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h2><p>application.yml</p><p>server:<br>  servlet:<br>    context-path: /patient<br>  port: 8080<br>spring:<br>  thymeleaf:<br>    encoding: UTF-8<br>    mode: HTML</p><p>Config.java</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。&lt;br&gt;当然也可以
+      
+    
+    </summary>
+    
+      <category term="spring" scheme="http://yoursite.com/categories/spring/"/>
+    
+    
+      <category term="util" scheme="http://yoursite.com/tags/util/"/>
+    
+      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
+    
+      <category term="yml" scheme="http://yoursite.com/tags/yml/"/>
     
   </entry>
   
@@ -202,21 +202,19 @@
   </entry>
   
   <entry>
-    <title>MySQL优化</title>
+    <title>MySQL数据库规范及解读</title>
     <link href="http://yoursite.com/2018/04/07/mysql%E4%BC%98%E5%8C%96/"/>
     <id>http://yoursite.com/2018/04/07/mysql优化/</id>
     <published>2018-04-06T23:35:18.000Z</published>
-    <updated>2018-04-18T23:04:15.874Z</updated>
+    <updated>2018-04-19T00:40:34.351Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="查询类型"><a href="#查询类型" class="headerlink" title="查询类型"></a>查询类型</h2><blockquote><p>index<br>const<br>system</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<p><strong>转</strong> <a href="https://my.oschina.net/u/1475115/blog/1622401" target="_blank" rel="noopener">MySQL数据库规范及解读</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;查询类型&quot;&gt;&lt;a href=&quot;#查询类型&quot; class=&quot;headerlink&quot; title=&quot;查询类型&quot;&gt;&lt;/a&gt;查询类型&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;index&lt;br&gt;const&lt;br&gt;system&lt;/p&gt;
-&lt;/blockquote&gt;
+        &lt;p&gt;&lt;strong&gt;转&lt;/strong&gt; &lt;a href=&quot;https://my.oschina.net/u/1475115/blog/1622401&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MySQL数据库规范及解读&lt;/a&gt;&lt;/p&gt;
 
       
     

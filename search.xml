@@ -8,9 +8,9 @@
         <category>java</category>
       </categories>
       <tags>
-        <tag>util</tag>
         <tag>spring</tag>
         <tag>aop</tag>
+        <tag>util</tag>
         <tag>异常</tag>
       </tags>
   </entry>
@@ -22,9 +22,9 @@
         <category>java</category>
       </categories>
       <tags>
+        <tag>util</tag>
         <tag>springboot</tag>
         <tag>日志</tag>
-        <tag>util</tag>
       </tags>
   </entry>
   <entry>
@@ -35,8 +35,8 @@
         <category>测试</category>
       </categories>
       <tags>
-        <tag>测试</tag>
         <tag>spring</tag>
+        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -54,19 +54,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[springboot config]]></title>
-    <url>%2F2018%2F04%2F16%2Fspringboot-config%2F</url>
-    <content type="text"><![CDATA[说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server: servlet: context-path: /patient port: 8080spring: thymeleaf: encoding: UTF-8 mode: HTML Config.java]]></content>
-      <categories>
-        <category>spring</category>
-      </categories>
-      <tags>
-        <tag>springboot</tag>
-        <tag>util</tag>
-        <tag>yml</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[springboot web]]></title>
     <url>%2F2018%2F04%2F16%2Fspringboot-web%2F</url>
     <content type="text"><![CDATA[依赖123456789&lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;&lt;/dependency&gt;&lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;&lt;/dependency&gt; config参考[https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/htmlsingle/#common-application-properties]WEB PROPERTIES 部分 thymeleaf参考[https://www.thymeleaf.org/documentation.html] ModelAndViewjson @RestController 相关注解 @Controller @RestController @GetMapping @PostMapping @PutMapping @DeleteMapping]]></content>
@@ -76,6 +63,19 @@
       <tags>
         <tag>springboot</tag>
         <tag>web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[springboot config]]></title>
+    <url>%2F2018%2F04%2F16%2Fspringboot-config%2F</url>
+    <content type="text"><![CDATA[说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server: servlet: context-path: /patient port: 8080spring: thymeleaf: encoding: UTF-8 mode: HTML Config.java]]></content>
+      <categories>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>util</tag>
+        <tag>springboot</tag>
+        <tag>yml</tag>
       </tags>
   </entry>
   <entry>
@@ -90,9 +90,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[MySQL优化]]></title>
+    <title><![CDATA[MySQL数据库规范及解读]]></title>
     <url>%2F2018%2F04%2F07%2Fmysql%E4%BC%98%E5%8C%96%2F</url>
-    <content type="text"><![CDATA[查询类型 indexconstsystem]]></content>
+    <content type="text"><![CDATA[转 MySQL数据库规范及解读]]></content>
       <categories>
         <category>数据库</category>
       </categories>
