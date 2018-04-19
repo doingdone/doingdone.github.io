@@ -121,33 +121,6 @@
   </entry>
   
   <entry>
-    <title>springboot web</title>
-    <link href="http://yoursite.com/2018/04/16/springboot-web/"/>
-    <id>http://yoursite.com/2018/04/16/springboot-web/</id>
-    <published>2018-04-16T12:55:22.000Z</published>
-    <updated>2018-04-18T22:57:10.736Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><p>参考[<a href="https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/htmlsingle/#common-application-properties]" target="_blank" rel="noopener">https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/htmlsingle/#common-application-properties]</a><br>WEB PROPERTIES 部分</p><h2 id="thymeleaf"><a href="#thymeleaf" class="headerlink" title="thymeleaf"></a>thymeleaf</h2><p>参考[<a href="https://www.thymeleaf.org/documentation.html]" target="_blank" rel="noopener">https://www.thymeleaf.org/documentation.html]</a></p><h2 id="ModelAndView"><a href="#ModelAndView" class="headerlink" title="ModelAndView"></a>ModelAndView</h2><h2 id="json"><a href="#json" class="headerlink" title="json"></a>json</h2><ul><li>@RestController</li></ul><h2 id="相关注解"><a href="#相关注解" class="headerlink" title="相关注解"></a>相关注解</h2><ul><li>@Controller</li><li>@RestController</li><li>@GetMapping</li><li>@PostMapping</li><li>@PutMapping</li><li>@DeleteMapping</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;依赖&quot;&gt;&lt;a href=&quot;#依赖&quot; class=&quot;headerlink&quot; title=&quot;依赖&quot;&gt;&lt;/a&gt;依赖&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span 
-      
-    
-    </summary>
-    
-      <category term="spring" scheme="http://yoursite.com/categories/spring/"/>
-    
-    
-      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
-    
-      <category term="web" scheme="http://yoursite.com/tags/web/"/>
-    
-  </entry>
-  
-  <entry>
     <title>springboot config</title>
     <link href="http://yoursite.com/2018/04/16/springboot-config/"/>
     <id>http://yoursite.com/2018/04/16/springboot-config/</id>
@@ -173,6 +146,33 @@
       <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
     
       <category term="yml" scheme="http://yoursite.com/tags/yml/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>springboot web</title>
+    <link href="http://yoursite.com/2018/04/16/springboot-web/"/>
+    <id>http://yoursite.com/2018/04/16/springboot-web/</id>
+    <published>2018-04-16T12:55:22.000Z</published>
+    <updated>2018-04-18T22:57:10.736Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><p>参考[<a href="https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/htmlsingle/#common-application-properties]" target="_blank" rel="noopener">https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/htmlsingle/#common-application-properties]</a><br>WEB PROPERTIES 部分</p><h2 id="thymeleaf"><a href="#thymeleaf" class="headerlink" title="thymeleaf"></a>thymeleaf</h2><p>参考[<a href="https://www.thymeleaf.org/documentation.html]" target="_blank" rel="noopener">https://www.thymeleaf.org/documentation.html]</a></p><h2 id="ModelAndView"><a href="#ModelAndView" class="headerlink" title="ModelAndView"></a>ModelAndView</h2><h2 id="json"><a href="#json" class="headerlink" title="json"></a>json</h2><ul><li>@RestController</li></ul><h2 id="相关注解"><a href="#相关注解" class="headerlink" title="相关注解"></a>相关注解</h2><ul><li>@Controller</li><li>@RestController</li><li>@GetMapping</li><li>@PostMapping</li><li>@PutMapping</li><li>@DeleteMapping</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;依赖&quot;&gt;&lt;a href=&quot;#依赖&quot; class=&quot;headerlink&quot; title=&quot;依赖&quot;&gt;&lt;/a&gt;依赖&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span 
+      
+    
+    </summary>
+    
+      <category term="spring" scheme="http://yoursite.com/categories/spring/"/>
+    
+    
+      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
     
   </entry>
   
