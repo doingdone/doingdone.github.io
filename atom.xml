@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-21T08:27:21.077Z</updated>
+  <updated>2018-04-22T04:42:42.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack</title>
+    <link href="http://yoursite.com/2018/04/22/webpack/"/>
+    <id>http://yoursite.com/2018/04/22/webpack/</id>
+    <published>2018-04-22T04:14:57.000Z</published>
+    <updated>2018-04-22T04:42:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><blockquote><p>nodejs</p></blockquote><blockquote><p>npm or yarn</p></blockquote><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><blockquote><p>mkdir project &amp;&amp; cd project</p></blockquote><blockquote><p>yarn init -y</p></blockquote><blockquote><p>yarn add webpack webpack-cli</p></blockquote><blockquote><p>添加webpack配置文件</p></blockquote><blockquote><p>修改package.json 文件，添加脚本</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;nodejs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;npm or yarn&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>crypto</title>
@@ -94,11 +124,11 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="util" scheme="http://yoursite.com/tags/util/"/>
-    
       <category term="spring" scheme="http://yoursite.com/tags/spring/"/>
     
       <category term="aop" scheme="http://yoursite.com/tags/aop/"/>
+    
+      <category term="util" scheme="http://yoursite.com/tags/util/"/>
     
       <category term="异常" scheme="http://yoursite.com/tags/%E5%BC%82%E5%B8%B8/"/>
     
@@ -118,11 +148,11 @@
       <category term="java" scheme="http://yoursite.com/categories/java/"/>
     
     
+      <category term="util" scheme="http://yoursite.com/tags/util/"/>
+    
       <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
     
       <category term="日志" scheme="http://yoursite.com/tags/%E6%97%A5%E5%BF%97/"/>
-    
-      <category term="util" scheme="http://yoursite.com/tags/util/"/>
     
   </entry>
   
@@ -178,35 +208,6 @@
   </entry>
   
   <entry>
-    <title>springboot config</title>
-    <link href="http://yoursite.com/2018/04/16/springboot-config/"/>
-    <id>http://yoursite.com/2018/04/16/springboot-config/</id>
-    <published>2018-04-16T12:55:22.000Z</published>
-    <updated>2018-04-18T22:57:33.088Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。<br>当然也可以指定配置文件，及相关的解析前缀。</p><h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h2><p>application.yml</p><p>server:<br>  servlet:<br>    context-path: /patient<br>  port: 8080<br>spring:<br>  thymeleaf:<br>    encoding: UTF-8<br>    mode: HTML</p><p>Config.java</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。&lt;br&gt;当然也可以
-      
-    
-    </summary>
-    
-      <category term="spring" scheme="http://yoursite.com/categories/spring/"/>
-    
-    
-      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
-    
-      <category term="util" scheme="http://yoursite.com/tags/util/"/>
-    
-      <category term="yml" scheme="http://yoursite.com/tags/yml/"/>
-    
-  </entry>
-  
-  <entry>
     <title>springboot web</title>
     <link href="http://yoursite.com/2018/04/16/springboot-web/"/>
     <id>http://yoursite.com/2018/04/16/springboot-web/</id>
@@ -230,6 +231,35 @@
       <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
     
       <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>springboot config</title>
+    <link href="http://yoursite.com/2018/04/16/springboot-config/"/>
+    <id>http://yoursite.com/2018/04/16/springboot-config/</id>
+    <published>2018-04-16T12:55:22.000Z</published>
+    <updated>2018-04-18T22:57:33.088Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。<br>当然也可以指定配置文件，及相关的解析前缀。</p><h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h2><p>application.yml</p><p>server:<br>  servlet:<br>    context-path: /patient<br>  port: 8080<br>spring:<br>  thymeleaf:<br>    encoding: UTF-8<br>    mode: HTML</p><p>Config.java</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。&lt;br&gt;当然也可以
+      
+    
+    </summary>
+    
+      <category term="spring" scheme="http://yoursite.com/categories/spring/"/>
+    
+    
+      <category term="util" scheme="http://yoursite.com/tags/util/"/>
+    
+      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
+    
+      <category term="yml" scheme="http://yoursite.com/tags/yml/"/>
     
   </entry>
   
