@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="张小一的博客">
 <meta property="og:description" content="基本概念 hex也称为base16，意思是使用16个可见字符来表示一个二进制数组，编码后数据大小将翻倍,因为1个字符需要用2个可见字符来表示。   base32，意思是使用32个可见字符来表示一个二进制数组，编码后数据大小变成原来的8/5,也即5个字符用8个可见字符表示，但是最后如果不足8个字符，将用=来补充。   base64，意思是使用64个可见字符来表示一个二进制数组，编码后数据大小变成原来">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-21T11:08:12.105Z">
+<meta property="og:updated_time" content="2018-04-22T04:13:01.591Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于编码">
 <meta name="twitter:description" content="基本概念 hex也称为base16，意思是使用16个可见字符来表示一个二进制数组，编码后数据大小将翻倍,因为1个字符需要用2个可见字符来表示。   base32，意思是使用32个可见字符来表示一个二进制数组，编码后数据大小变成原来的8/5,也即5个字符用8个可见字符表示，但是最后如果不足8个字符，将用=来补充。   base64，意思是使用64个可见字符来表示一个二进制数组，编码后数据大小变成原来">
@@ -164,9 +164,10 @@
 <blockquote>
 <p>只规定了符号的二进制代码，却没有规定这个二进制代码应该如何存储。</p>
 </blockquote>
-<h2 id="乱码"><a href="#乱码" class="headerlink" title="乱码"></a>乱码</h2><p>乱码是因为编码方式不一致，utf-8编码的字符只能用utf-8，否则就会出现乱码。</p>
-<p>从文件读取的UTF-8字符被转换为Unicode字符到内存里，编辑完成后，保存的时候再把Unicode转换为UTF-8保存到文件。</p>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><h3 id="HEX"><a href="#HEX" class="headerlink" title="HEX"></a>HEX</h3><blockquote>
+<h2 id="乱码"><a href="#乱码" class="headerlink" title="乱码"></a>乱码</h2><p>乱码是因为编码、解码方式不一致，因此要知道字符的编码方式，然后按照同样的方式去解码。</p>
+<p>编码转换方法</p>
+<pre><code>new String(&quot;hello&quot;.getBytes(&quot;ISO-8859-1&quot;), &quot;UTF-8&quot;);
+</code></pre><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><h3 id="HEX"><a href="#HEX" class="headerlink" title="HEX"></a>HEX</h3><blockquote>
 <p>依赖Guava</p>
 </blockquote>
 <pre><code>/**
@@ -202,7 +203,8 @@ public static String encodeBase64(byte[] input) {
 public static byte[] decodeBase64(CharSequence input) {
     return BaseEncoding.base64().decode(input);
 }
-</code></pre>
+</code></pre><h2 id="区别与联系"><a href="#区别与联系" class="headerlink" title="区别与联系"></a>区别与联系</h2><p>区别主要就是空间效率的区别，base64是具有比较高的空间效率的。当然，hex编码不区分大小写，但是base32与base64是区分的。<br>联系就是大家都是一种稳定的把二进制数组变成可见字符的编码方式。<br>base32中StdEncoding和HexEncoding所使用的字符不同，但是具体其他区别我也不是很清楚。<br>base64中URLEncoding一般用于编码URL</p>
+
         </div>
 
         
