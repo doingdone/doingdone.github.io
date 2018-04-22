@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[crypto]]></title>
+    <url>%2F2018%2F04%2F21%2Fcrypto%2F</url>
+    <content type="text"><![CDATA[加密 什么是加密 什么是编码 摘要 摘要是干什么的，跟加密有什么区别]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[关于编码]]></title>
+    <url>%2F2018%2F04%2F21%2FJava%E7%BC%96%E7%A0%81%2F</url>
+    <content type="text"><![CDATA[基本概念 hex也称为base16，意思是使用16个可见字符来表示一个二进制数组，编码后数据大小将翻倍,因为1个字符需要用2个可见字符来表示。 base32，意思是使用32个可见字符来表示一个二进制数组，编码后数据大小变成原来的8/5,也即5个字符用8个可见字符表示，但是最后如果不足8个字符，将用=来补充。 base64，意思是使用64个可见字符来表示一个二进制数组，编码后数据大小变成原来的4/3,也即3个字符用4个可见字符来表示。 使用场景1有很多字符是不可见的，我们需要把这些不可见字符变成可见字符。那为啥要变成可见字符？你是看着乱码舒服还是看着可见字符舒服呢？其实不仅仅舒不舒服的问题，有些时候还必须要用可见字符，例如在网络中传输数据时，不同路由器对于不可见字符的处理是不同的，因此可能出现数据错误，因此还必须使用可见字符。 Unicode 只是一个符号集，将世界上所有的符号都纳入其中。 只规定了符号的二进制代码，却没有规定这个二进制代码应该如何存储。 乱码乱码是因为编码方式不一致，utf-8编码的字符只能用utf-8，否则就会出现乱码。 从文件读取的UTF-8字符被转换为Unicode字符到内存里，编辑完成后，保存的时候再把Unicode转换为UTF-8保存到文件。 DemoHEX 依赖Guava /** * Hex编码, 将byte[]编码为String，默认为ABCDEF为大写字母. */ public static String encodeHex(byte[] input) { return BaseEncoding.base16().encode(input); } /** * Hex解码, 将String解码为byte[]. * * 字符串有异常时抛出IllegalArgumentException. */ public static byte[] decodeHex(CharSequence input) { return BaseEncoding.base16().decode(input); } Base32Base64 依赖Guava /** * Base64编码. */ public static String encodeBase64(byte[] input) { return BaseEncoding.base64().encode(input); } /** * Base64解码. * * 如果字符不合法，抛出IllegalArgumentException */ public static byte[] decodeBase64(CharSequence input) { return BaseEncoding.base64().decode(input); }]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[exception处理]]></title>
     <url>%2F2018%2F04%2F19%2Fexception%2F</url>
     <content type="text"><![CDATA[运行时 vs notspring统一异常处理异常日志记录异常堆栈信息]]></content>
@@ -8,9 +30,9 @@
         <category>java</category>
       </categories>
       <tags>
+        <tag>util</tag>
         <tag>spring</tag>
         <tag>aop</tag>
-        <tag>util</tag>
         <tag>异常</tag>
       </tags>
   </entry>
@@ -22,9 +44,9 @@
         <category>java</category>
       </categories>
       <tags>
-        <tag>util</tag>
         <tag>springboot</tag>
         <tag>日志</tag>
+        <tag>util</tag>
       </tags>
   </entry>
   <entry>
@@ -35,8 +57,8 @@
         <category>测试</category>
       </categories>
       <tags>
-        <tag>spring</tag>
         <tag>测试</tag>
+        <tag>spring</tag>
       </tags>
   </entry>
   <entry>
@@ -61,8 +83,8 @@
         <category>spring</category>
       </categories>
       <tags>
-        <tag>util</tag>
         <tag>springboot</tag>
+        <tag>util</tag>
         <tag>yml</tag>
       </tags>
   </entry>

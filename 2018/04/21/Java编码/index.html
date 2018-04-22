@@ -6,20 +6,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
-  <title>springboot config | 张小一的博客</title>
+  <title>关于编码 | 张小一的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server:  servlet:    context-path: /patient  port: 8080spring:  thymeleaf:    encoding: UTF-8">
-<meta name="keywords" content="springboot,util,yml">
+  <meta name="description" content="基本概念 hex也称为base16，意思是使用16个可见字符来表示一个二进制数组，编码后数据大小将翻倍,因为1个字符需要用2个可见字符来表示。   base32，意思是使用32个可见字符来表示一个二进制数组，编码后数据大小变成原来的8/5,也即5个字符用8个可见字符表示，但是最后如果不足8个字符，将用=来补充。   base64，意思是使用64个可见字符来表示一个二进制数组，编码后数据大小变成原来">
+<meta name="keywords" content="java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="springboot config">
-<meta property="og:url" content="http://yoursite.com/2018/04/16/springboot-config/index.html">
+<meta property="og:title" content="关于编码">
+<meta property="og:url" content="http://yoursite.com/2018/04/21/Java编码/index.html">
 <meta property="og:site_name" content="张小一的博客">
-<meta property="og:description" content="说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server:  servlet:    context-path: /patient  port: 8080spring:  thymeleaf:    encoding: UTF-8">
+<meta property="og:description" content="基本概念 hex也称为base16，意思是使用16个可见字符来表示一个二进制数组，编码后数据大小将翻倍,因为1个字符需要用2个可见字符来表示。   base32，意思是使用32个可见字符来表示一个二进制数组，编码后数据大小变成原来的8/5,也即5个字符用8个可见字符表示，但是最后如果不足8个字符，将用=来补充。   base64，意思是使用64个可见字符来表示一个二进制数组，编码后数据大小变成原来">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-18T22:57:33.088Z">
+<meta property="og:updated_time" content="2018-04-21T11:08:12.105Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="springboot config">
-<meta name="twitter:description" content="说明spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。当然也可以指定配置文件，及相关的解析前缀。 demoapplication.yml server:  servlet:    context-path: /patient  port: 8080spring:  thymeleaf:    encoding: UTF-8">
+<meta name="twitter:title" content="关于编码">
+<meta name="twitter:description" content="基本概念 hex也称为base16，意思是使用16个可见字符来表示一个二进制数组，编码后数据大小将翻倍,因为1个字符需要用2个可见字符来表示。   base32，意思是使用32个可见字符来表示一个二进制数组，编码后数据大小变成原来的8/5,也即5个字符用8个可见字符表示，但是最后如果不足8个字符，将用=来补充。   base64，意思是使用64个可见字符来表示一个二进制数组，编码后数据大小变成原来">
   
     <link rel="alternate" href="/atom.xml" title="张小一的博客" type="application/atom+xml">
   
@@ -130,33 +130,79 @@
     <div class="container post-box">
         <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
             <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
-                <strong>springboot config</strong>
+                <strong>关于编码</strong>
             </h1>
             
             <div class="is-flex align-center">
                 <img class="post-avatar" src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-circle-512.png">
                 <span style="padding:0 10px;"> <span class="sub-title">Author</span> doingdone</span>
-                <span class="post-date sub-title">Time: 2018-04-16</span>
+                <span class="post-date sub-title">Time: 2018-04-21</span>
             </div>
             
                 <div>
                     
-                         <a class="tag is-post-tag" href="/tags/springboot/">springboot</a>
-                    
-                         <a class="tag is-post-tag" href="/tags/util/">util</a>
-                    
-                         <a class="tag is-post-tag" href="/tags/yml/">yml</a>
+                         <a class="tag is-post-tag" href="/tags/java/">java</a>
                     
                 </div>
             
 
         </div>
         <div class="content" style="overflow: auto">
-            <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>spingboot 可以添加自定义的配置，需要在application.yml文件中添加，并设置对应的Config类解析。<br>当然也可以指定配置文件，及相关的解析前缀。</p>
-<h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h2><p>application.yml</p>
-<p>server:<br>  servlet:<br>    context-path: /patient<br>  port: 8080<br>spring:<br>  thymeleaf:<br>    encoding: UTF-8<br>    mode: HTML</p>
-<p>Config.java</p>
+            <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><blockquote>
+<p>hex也称为base16，意思是使用16个可见字符来表示一个二进制数组，编码后数据大小将翻倍,因为1个字符需要用2个可见字符来表示。</p>
+</blockquote>
+<blockquote>
+<p>base32，意思是使用32个可见字符来表示一个二进制数组，编码后数据大小变成原来的8/5,也即5个字符用8个可见字符表示，但是最后如果不足8个字符，将用=来补充。</p>
+</blockquote>
+<blockquote>
+<p>base64，意思是使用64个可见字符来表示一个二进制数组，编码后数据大小变成原来的4/3,也即3个字符用4个可见字符来表示。</p>
+</blockquote>
+<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">有很多字符是不可见的，我们需要把这些不可见字符变成可见字符。那为啥要变成可见字符？你是看着乱码舒服还是看着可见字符舒服呢？其实不仅仅舒不舒服的问题，有些时候还必须要用可见字符，例如在网络中传输数据时，不同路由器对于不可见字符的处理是不同的，因此可能出现数据错误，因此还必须使用可见字符。</span><br></pre></td></tr></table></figure>
+<h2 id="Unicode"><a href="#Unicode" class="headerlink" title="Unicode"></a>Unicode</h2><blockquote>
+<p>只是一个符号集，将世界上所有的符号都纳入其中。</p>
+</blockquote>
+<blockquote>
+<p>只规定了符号的二进制代码，却没有规定这个二进制代码应该如何存储。</p>
+</blockquote>
+<h2 id="乱码"><a href="#乱码" class="headerlink" title="乱码"></a>乱码</h2><p>乱码是因为编码方式不一致，utf-8编码的字符只能用utf-8，否则就会出现乱码。</p>
+<p>从文件读取的UTF-8字符被转换为Unicode字符到内存里，编辑完成后，保存的时候再把Unicode转换为UTF-8保存到文件。</p>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><h3 id="HEX"><a href="#HEX" class="headerlink" title="HEX"></a>HEX</h3><blockquote>
+<p>依赖Guava</p>
+</blockquote>
+<pre><code>/**
+ * Hex编码, 将byte[]编码为String，默认为ABCDEF为大写字母.
+ */
+public static String encodeHex(byte[] input) {
+    return BaseEncoding.base16().encode(input);
+}
 
+/**
+ * Hex解码, 将String解码为byte[].
+ * 
+ * 字符串有异常时抛出IllegalArgumentException.
+ */
+public static byte[] decodeHex(CharSequence input) {
+    return BaseEncoding.base16().decode(input);
+}
+</code></pre><h3 id="Base32"><a href="#Base32" class="headerlink" title="Base32"></a>Base32</h3><h3 id="Base64"><a href="#Base64" class="headerlink" title="Base64"></a>Base64</h3><blockquote>
+<p>依赖Guava</p>
+</blockquote>
+<pre><code>/**
+ * Base64编码.
+ */
+public static String encodeBase64(byte[] input) {
+    return BaseEncoding.base64().encode(input);
+}
+
+/**
+ * Base64解码.
+ * 
+ * 如果字符不合法，抛出IllegalArgumentException
+ */
+public static byte[] decodeBase64(CharSequence input) {
+    return BaseEncoding.base64().decode(input);
+}
+</code></pre>
         </div>
 
         
@@ -202,7 +248,7 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: 'springboot config', // 可选。默认为 location.href
+  id: '关于编码', // 可选。默认为 location.href
   owner: 'doingdone',
   repo: 'doingdone.github.io',
   oauth: {
